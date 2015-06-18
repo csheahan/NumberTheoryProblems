@@ -2,6 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import chapter1.section1.problem1
+import chapter1.section1.problem2
 import helpers
 
 def load_section_one(tree, frame):
@@ -51,8 +52,8 @@ def load_problem_two(tree, frame):
 def problem_two_view(tree, frame, event):
   helpers.clear_frame(frame)
 
-  prompt = Label(frame, text=u"Given a number \u0381, find its spectrum " +
-    u"spectrum sequence")
+  prompt = Label(frame, text=u"Given a number \u03B1, find its spectrum " +
+    u"sequence")
   prompt.grid(row=0, columnspan=3)
 
   entryLabel = Label(frame, text=u"Enter an \u03B1:")
@@ -68,3 +69,15 @@ def problem_two_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)
 
   answer = chapter1.section1.problem2.problem(float(alpha.get()))
+
+  answerLabelText = u"With an \u03B1 of " + unicode(float(alpha.get()))
+  answerLabelText += u", we have a spectrum sequnce of ["
+
+  for ele in answer:
+    answerLabelText += unicode(ele) + u", "
+
+  answerLabelText = answerLabelText[:-2]
+  answerLabelText += u"]"
+
+  answerText = Label(frame, text=answerLabelText)
+  answerText.grid(row=2, columnspan=3)
