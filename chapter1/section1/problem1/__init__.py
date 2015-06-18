@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section1.problem1
+import chapter1.section1.problem1.problem1
 
 def load_problem_one(tree, frame):
   tree.insert("ch1.1", "end", "ch1.1.1", text="Problem 1", tags=["ch1.1.1"])
@@ -28,7 +28,7 @@ def problem_one_view(tree, frame, event):
 def problem_one_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)
 
-  answer = chapter1.section1.problem1.problem(int(alpha.get()))
+  answer = chapter1.section1.problem1.problem1.problem(int(alpha.get()))
 
   answerText = Label(frame, text=u"With an \u03B1 of " +
     unicode(int(alpha.get())) + u" we have the inequality " +

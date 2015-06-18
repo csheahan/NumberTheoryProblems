@@ -14,7 +14,7 @@ it should be followed most of the time.
 Problem File Structure
 ----------------------
 - Answers to problems should exist in the following file path 
-`<chapter of problem>/<section of problem>/<problem #>.py`
+`<chapter of problem>/<section of problem>/<problem #>/<problem #>.py`
 - All problems should contain a comment at the top containing 3 things:
 the problem, the constraints of the problem, and your observations/approach to
 the problem
