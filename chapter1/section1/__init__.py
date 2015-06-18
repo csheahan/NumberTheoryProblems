@@ -7,9 +7,10 @@ import helpers
 def load_section_one(tree, frame):
   tree.insert("ch1", "end", "ch1.1", text="Section 1")
   load_problem_one(tree, frame)
+  load_problem_two(tree, frame)
 
 def load_problem_one(tree, frame):
-  tree.insert("ch1.1", "end", "ch1.1.1", text="Problem 1", tags=['ch1.1.1'])
+  tree.insert("ch1.1", "end", "ch1.1.1", text="Problem 1", tags=["ch1.1.1"])
   tree.tag_bind("ch1.1.1", '<1>',
     functools.partial(problem_one_view, tree, frame))
 
@@ -41,3 +42,29 @@ def problem_one_display_answer(tree, frame, alpha):
     unicode(answer[0][1]))
   
   answerText.grid(row=2, columnspan=3)
+
+def load_problem_two(tree, frame):
+  tree.insert("ch1.1", "end", "ch1.1.2", text="Problem 2", tags=["ch1.1.2"])
+  tree.tag_bind("ch1.1.2", "<1>",
+    functools.partial(problem_two_view, tree, frame))
+
+def problem_two_view(tree, frame, event):
+  helpers.clear_frame(frame)
+
+  prompt = Label(frame, text=u"Given a number \u0381, find its spectrum " +
+    u"spectrum sequence")
+  prompt.grid(row=0, columnspan=3)
+
+  entryLabel = Label(frame, text=u"Enter an \u03B1:")
+  entryLabel.grid(row=1, column=0)
+  alpha = Entry(frame)
+  alpha.grid(row=1, column=1)
+  submitButton = Button(frame,
+    text="submit",
+    command=functools.partial(problem_two_display_answer, tree, frame, alpha))
+  submitButton.grid(row=1, column=2)
+
+def problem_two_display_answer(tree, frame, alpha):
+  helpers.clear_row(frame, 2)
+
+  answer = chapter1.section1.problem2.problem(float(alpha.get()))
