@@ -1,6 +1,8 @@
 Number Theory Problems
 ======================
 
+If you wish to contribute, be sure to check out the [docs](Docs/README.md)
+
 This is simply a side project to practice 3 things:
 - GUI programming: I am interested in being able to make nice, intuitive, and
 easy designs to act as front ends to my projects. I'm hoping this project can
