@@ -8,9 +8,6 @@ Probelem:
 
 Constraints:
   α - must be a real number
-
-Observation:
-  None needed, this is a simple sequence generation
 '''
 
 ###############################################################################

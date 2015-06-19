@@ -8,11 +8,6 @@ Constraints:
   α - must be an integer
   p - must be an integer
   q - must be an integer s.t. q != 0
-
-Observation:
-  if p/q = α, then the inequality is guaranteed to hold. Leverage this
-  observation to not do costly and potentially wrong via rounding error
-  calculations
 '''
 
 ###############################################################################
