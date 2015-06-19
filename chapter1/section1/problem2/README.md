@@ -1,7 +1,7 @@
 Chapter 1 Section 1 Problem 2
 =============================
 
-- (Thoughts)[#thoughts]
+- [Thoughts](#thoughts)
 
 ### Thoughts ###
 
