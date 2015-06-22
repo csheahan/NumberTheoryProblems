@@ -1,7 +1,7 @@
 Chapter 1 Section 1 Problem 1
 =============================
 
-- [Thoughts](#thoughts)
+- [Thoughts][thoughts]
 
 ### Thoughts ###
 
@@ -11,3 +11,5 @@ with the numbers, I noticed that if p/q=α, then the equation is guaranteed to
 hold because the left hand side of the equation is 0. Thus, to generate
 infinite p's and q's, simply set p to α*α, q to α, then scale both to nα where
 n is an integer.
+
+[thoughts]: #thoughts

@@ -1,8 +1,8 @@
 Chapter 1 Section 1 Problem 3
 =============================
 
-- [Thoughts](#thoughts)
-- [Approach](#approach)
+- [Thoughts][thoughts]
+- [Approach][approach]
 
 ### Thoughts ###
 
@@ -43,3 +43,6 @@ that i + j = test_number that it must be checked (after assuming that it
 wasn't). I may or may not write this proof up, it all depends on if I both
 write it and get it in a state where I like the way I approached the proof and
 worded it.
+
+[thoughts]: #thoughts
+[approach]: #approach

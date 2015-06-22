@@ -1,7 +1,23 @@
 Number Theory Problems
 ======================
 
-If you wish to contribute, be sure to check out the [docs](Docs/README.md)
+- [Problem Index][index]
+- [Documentation][documentation]
+- [What this project is][what]
+
+### Index ###
+
+- Chapter 1
+  - Section 1
+    - [Problem 1][1.1.1]
+    - [Problem 2][1.1.2]
+    - [Problem 3][1.1.3]
+
+### Documentation ###
+
+If you wish to contribute, be sure to check out the [docs][docs]
+
+### What it is ###
 
 This is simply a side project to practice 3 things:
 - GUI programming: I am interested in being able to make nice, intuitive, and
@@ -13,3 +29,11 @@ short one-off scripts and quick mock-ups of ideas.
 - Number Theory: I took a number theory class this past semester and had a blast
 in it. This project is intended to both enhance and reinforce my understanding
 of the subject in an environment I enjoy.
+
+[index]: #index
+[documentation]: #documentation
+[what]: #what-it-is
+[1.1.1]: chapter1/section1/problem1
+[1.1.2]: chapter1/section1/problem2
+[1.1.3]: chapter1/section1/problem3
+[docs]: Docs
