@@ -12,18 +12,16 @@ def load_problem_one(tree, frame):
 def problem_one_view(tree, frame, event):
   helpers.clear_frame(frame)
 
-  prompt = Label(frame, text=u"Given a number \u03B1, find rational number " +
-    u"p/q such that |\u03B1 - p/q| \u2264 1/q^2")
-  prompt.grid(row=0, columnspan=3)
+  problemText = u"Given a number \u03B1, find rational number p/q such that "
+  problemText += u"|\u03B1 - p/q| \u2264 1/q^2"
+  promptText = u"Enter an integer \u03B1:"
 
-  entryLabel = Label(frame, text=u"Enter an integer \u03B1:")
-  entryLabel.grid(row=1, column=0)
-  alpha = Entry(frame)
-  alpha.grid(row=1, column=1)
-  submitButton = Button(frame,
-    text="submit",
-    command=functools.partial(problem_one_display_answer, tree, frame, alpha))
-  submitButton.grid(row=1, column=2)
+  helpers.generate_prompt_and_input(tree,
+    frame,
+    problemText,
+    promptText,
+    problem_two_display_answer
+    )
 
 def problem_one_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)

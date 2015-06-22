@@ -12,17 +12,15 @@ def load_problem_three(tree, frame):
 def problem_three_view(tree, frame, event):
   helpers.clear_frame(frame)
 
-  prompt = Label(frame, text=u"Find the first n Ulam numbers")
-  prompt.grid(row=0, columnspan=3)
+  problemText = "Find the first n Ulam numbers"
+  promptText = "Enter a positive integer n:"
 
-  entryLabel = Label(frame, text=u"Enter a positive integer n:")
-  entryLabel.grid(row=1, column=0)
-  alpha = Entry(frame)
-  alpha.grid(row=1, column=1)
-  submitButton = Button(frame,
-    text="submit",
-    command=functools.partial(problem_three_display_answer, tree, frame, alpha))
-  submitButton.grid(row=1, column=2)
+  helpers.generate_prompt_and_input(tree,
+    frame,
+    problemText,
+    promptText,
+    problem_three_display_answer
+    )
 
 def problem_three_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)

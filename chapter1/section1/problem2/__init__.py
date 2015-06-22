@@ -12,18 +12,15 @@ def load_problem_two(tree, frame):
 def problem_two_view(tree, frame, event):
   helpers.clear_frame(frame)
 
-  prompt = Label(frame, text=u"Given a number \u03B1, find its spectrum " +
-    u"sequence")
-  prompt.grid(row=0, columnspan=3)
+  problemText = u"Given a number \u03B1, find its spectrum sequence."
+  promptText = u"Enter a real number \u03B1:"
 
-  entryLabel = Label(frame, text=u"Enter a real number \u03B1:")
-  entryLabel.grid(row=1, column=0)
-  alpha = Entry(frame)
-  alpha.grid(row=1, column=1)
-  submitButton = Button(frame,
-    text="submit",
-    command=functools.partial(problem_two_display_answer, tree, frame, alpha))
-  submitButton.grid(row=1, column=2)
+  helpers.generate_prompt_and_input(tree,
+    frame,
+    problemText,
+    promptText,
+    problem_two_display_answer
+    )
 
 def problem_two_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)
