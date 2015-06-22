@@ -19,7 +19,7 @@ def problem(n):
   global Ulam_List
   
   if (n <= 0):
-    return []
+    raise ValueError("n must be a positive integer")
   elif (n == 1):
     return [1]
   elif (n == 2):

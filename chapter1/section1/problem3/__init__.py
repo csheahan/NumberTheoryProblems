@@ -15,7 +15,7 @@ def problem_three_view(tree, frame, event):
   prompt = Label(frame, text=u"Find the first n Ulam numbers")
   prompt.grid(row=0, columnspan=3)
 
-  entryLabel = Label(frame, text=u"Enter an n:")
+  entryLabel = Label(frame, text=u"Enter a positive integer n:")
   entryLabel.grid(row=1, column=0)
   alpha = Entry(frame)
   alpha.grid(row=1, column=1)
@@ -27,14 +27,23 @@ def problem_three_view(tree, frame, event):
 def problem_three_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)
 
-  answer = chapter1.section1.problem3.problem3.problem(int(alpha.get()))
+  try:
+    answer = chapter1.section1.problem3.problem3.problem(int(alpha.get()))
 
-  answerLabelText = "The first " + alpha.get() + " Ulam numbers are: "
+    answerLabelText = "The first " + alpha.get() + " Ulam numbers are: "
 
-  for ele in answer:
-    answerLabelText += str(ele) + ", "
+    for ele in answer:
+      answerLabelText += str(ele) + ", "
 
-  answerLabelText = answerLabelText[:-2]
+    answerLabelText = answerLabelText[:-2]
 
-  answerText = Label(frame, text=answerLabelText)
-  answerText.grid(row=2, columnspan=3)
+    answerText = Label(frame, text=answerLabelText)
+    answerText.grid(row=2, columnspan=3)
+  except:
+    helpers.clear_row(frame, 2)
+
+    errorText = u"An error has occurred. Please ensure that n is a"
+    errorText += u" positive integer"
+
+    errorLabel = Label(frame, text=errorText)
+    errorLabel.grid(row=2, columnspan=3)

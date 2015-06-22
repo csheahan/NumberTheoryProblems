@@ -16,7 +16,7 @@ def problem_two_view(tree, frame, event):
     u"sequence")
   prompt.grid(row=0, columnspan=3)
 
-  entryLabel = Label(frame, text=u"Enter an \u03B1:")
+  entryLabel = Label(frame, text=u"Enter a real number \u03B1:")
   entryLabel.grid(row=1, column=0)
   alpha = Entry(frame)
   alpha.grid(row=1, column=1)
@@ -28,16 +28,25 @@ def problem_two_view(tree, frame, event):
 def problem_two_display_answer(tree, frame, alpha):
   helpers.clear_row(frame, 2)
 
-  answer = chapter1.section1.problem2.problem2.problem(float(alpha.get()))
+  try:
+    answer = chapter1.section1.problem2.problem2.problem(float(alpha.get()))
 
-  answerLabelText = u"With an \u03B1 of " + unicode(float(alpha.get()))
-  answerLabelText += u", we have a spectrum sequnce of ["
+    answerLabelText = u"With an \u03B1 of " + unicode(float(alpha.get()))
+    answerLabelText += u", we have a spectrum sequnce of ["
 
-  for ele in answer:
-    answerLabelText += unicode(ele) + u", "
+    for ele in answer:
+      answerLabelText += unicode(ele) + u", "
 
-  answerLabelText = answerLabelText[:-2]
-  answerLabelText += u"]"
+    answerLabelText = answerLabelText[:-2]
+    answerLabelText += u"]"
 
-  answerText = Label(frame, text=answerLabelText)
-  answerText.grid(row=2, columnspan=3)
+    answerText = Label(frame, text=answerLabelText)
+    answerText.grid(row=2, columnspan=3)
+  except:
+    helpers.clear_row(frame, 2)
+
+    errorText = u"An error has occurred. Please ensure that \u03B1 is a"
+    errorText += u" real number"
+
+    errorLabel = Label(frame, text=errorText)
+    errorLabel.grid(row=2, columnspan=3)
