@@ -7,11 +7,12 @@ Number Theory Problems
 
 ### Index ###
 
-- Chapter 1
-  - Section 1
+- Chapter 1: The Integers
+  - Section 1: Numbers and Sequences
     - [Problem 1][1.1.1]
     - [Problem 2][1.1.2]
     - [Problem 3][1.1.3]
+  - Section 3: Mathematical Induction
 
 ### Documentation ###
 

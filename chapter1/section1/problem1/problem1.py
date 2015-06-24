@@ -22,7 +22,6 @@ Constraints:
 #         rhs = 1/q^2
 ###
 def problem(alpha):
-  print alpha
   answers = []
 
   q = alpha
