@@ -15,6 +15,7 @@ Number Theory Problems
   - Section 3: Mathematical Induction
     - [Problem 1][1.3.1]
     - [Problem 2][1.3.2]
+    - [Problem 3][1.3.3]
 
 ### Documentation ###
 
@@ -41,4 +42,5 @@ of the subject in an environment I enjoy.
 [1.1.3]: chapter1/section1/problem3
 [1.3.1]: chapter1/section3/problem1
 [1.3.2]: chapter1/section3/problem2
+[1.3.3]: chapter1/section3/problem3
 [docs]: Docs
