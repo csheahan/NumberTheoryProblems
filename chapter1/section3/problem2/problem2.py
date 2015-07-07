@@ -1,3 +1,8 @@
+'''
+Problem:
+  Cover a 2^n x 2^n chessboard that is missing one square using L-shaped
+  pieces.
+'''
 
 Curr_Num = 1
 
