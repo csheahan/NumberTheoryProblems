@@ -2,10 +2,22 @@
 Problem:
   Cover a 2^n x 2^n chessboard that is missing one square using L-shaped
   pieces.
+
+Constraints:
+  n - must be a positive integer
 '''
 
 Curr_Num = 1
 
+###############################################################################
+# problem - Cover a 2^n x 2^n chessboard that is missing one square using
+#           L-shaped pieces
+#           
+# @param n - n parameter to use
+# 
+# @return A chessboard missing one square with the rest of the squares covered
+#         by L-shaped pieces
+###
 def problem(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
@@ -20,7 +32,19 @@ def problem(n):
 
   return _problem(answer, 0, bound, 0, bound)
 
-# highs are to but not equal to
+###############################################################################
+# _problem - Internal helper method for problem. Solves the problem via a
+#            divide and conquor approach
+#           
+# @param grid - The chessboard
+# @param lowx - lowerbound for row. Iterations start here.
+# @param highx - upperbound for row. Iterations end before this number.
+# @param lowy - lowerbound for column. Iterations start here.
+# @param highy - upperbound for column. Iterations end before this number.
+# 
+# @return A chessboard missing one square with the rest of the squares covered
+#         by L-shaped pieces
+###
 def _problem(grid, lowx, highx, lowy, highy):
   global Curr_Num
 
