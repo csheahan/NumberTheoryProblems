@@ -18,6 +18,7 @@ Number Theory Problems
     - [Problem 3][1.3.3]
   - Section 4: The Fibonacci Numbers
     - [Problem 1][1.4.1]
+    - [Problem 2][1.4.2]
 
 ### Documentation ###
 
@@ -46,4 +47,5 @@ of the subject in an environment I enjoy.
 [1.3.2]: chapter1/section3/problem2
 [1.3.3]: chapter1/section3/problem3
 [1.4.1]: chapter1/section4/problem1
+[1.4.2]: chapter1/section4/problem2
 [docs]: Docs
