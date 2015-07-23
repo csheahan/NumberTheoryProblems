@@ -21,7 +21,26 @@ def problem_three_view(tree, frame, event):
     promptText,
     problem_three_display_answer)
 
-def problem_three_display_answer(tree, frame, alpha):
+def problem_three_display_answer(tree, frame, n):
   helpers.clear_row(frame, 2)
 
-  answer = chapter1.section4.problem3.problem3.problem(int(alpha.get()))
+  try:
+    answer = chapter1.section4.problem3.problem3.problem(int(n.get()))
+
+    answerLabelText = "The Zeckendorf representation of " + n.get() + " is: "
+
+    for num in answer:
+      answerLabelText += str(num) + " + "
+
+    answerLabelText = answerLabelText[:-3]
+
+    answerText = Label(frame, text=answerLabelText)
+    answerText.grid(row=2, columnspan=3)
+  except:
+    helpers.clear_row(frame, 2)
+
+    errorText = "An error has occurred. Please ensure that n is a positive "
+    errorText += "integer"
+
+    errorLabel = Label(frame, text=errorText)
+    errorLabel.grid(row=2, columnspan=3)

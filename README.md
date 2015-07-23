@@ -19,6 +19,11 @@ Number Theory Problems
   - Section 4: The Fibonacci Numbers
     - [Problem 1][1.4.1]
     - [Problem 2][1.4.2]
+    - [Problem 3][1.4.3]
+  - Section 5: Divisibility
+    - [Problem 1][1.5.1]
+    - [Problem 2][1.5.2]
+    - [Problem 3][1.5.3]
 
 ### Documentation ###
 
@@ -48,4 +53,8 @@ of the subject in an environment I enjoy.
 [1.3.3]: chapter1/section3/problem3
 [1.4.1]: chapter1/section4/problem1
 [1.4.2]: chapter1/section4/problem2
+[1.4.3]: chapter1/section4/problem3
+[1.5.1]: chapter1/section5/problem1
+[1.5.2]: chapter1/section5/problem2
+[1.5.3]: chapter1/section5/problem3
 [docs]: Docs
