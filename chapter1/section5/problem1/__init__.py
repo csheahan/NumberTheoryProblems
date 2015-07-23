@@ -41,7 +41,7 @@ def problem_one_display_answer(tree, frame, x, y):
       answerLabelText = x.get() + " is not divisble by " + y.get()
 
     answerText = Label(frame, text=answerLabelText)
-    answerText.grid(row=2, columnspan=3)
+    answerText.grid(row=2, columnspan=5)
   except:
     helpers.clear_row(frame, 2)
 
@@ -49,4 +49,4 @@ def problem_one_display_answer(tree, frame, x, y):
     errorText += "integers"
 
     errorLabel = Label(frame, text=errorText)
-    errorLabel.grid(row=2, columnspan=3)
+    errorLabel.grid(row=2, columnspan=5)
