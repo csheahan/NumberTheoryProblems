@@ -24,6 +24,7 @@ Number Theory Problems
     - [Problem 1][1.5.1]
     - [Problem 2][1.5.2]
     - [Problem 3][1.5.3]
+    - [Problem 4][1.5.4]
 
 ### Documentation ###
 
@@ -57,4 +58,5 @@ of the subject in an environment I enjoy.
 [1.5.1]: chapter1/section5/problem1
 [1.5.2]: chapter1/section5/problem2
 [1.5.3]: chapter1/section5/problem3
+[1.5.4]: chapter1/section5/problem4
 [docs]: Docs
