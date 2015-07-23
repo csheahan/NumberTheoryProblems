@@ -17,30 +17,15 @@ def problem_three_view(tree, frame, event):
   ppromptText = "Enter a positive integer p:"
   qpromptText = "Enter a positive integer q:"
 
-  prompt = Label(frame, text=problemText)
-  prompt.grid(row=0, columnspan=5)
+  helpers.generate_two_prompt_and_input(
+    tree,
+    frame,
+    problemText,
+    ppromptText,
+    qpromptText,
+    problem_three_display_answer
+  )
 
-  plabel = Label(frame, text=ppromptText)
-  plabel.grid(row=1, column=0)
-
-  pprompt = Entry(frame)
-  pprompt.grid(row=1, column=1)
-
-  qlabel = Label(frame, text=qpromptText)
-  qlabel.grid(row=1, column=2)
-
-  qprompt = Entry(frame)
-  qprompt.grid(row=1, column=3)
-
-  submitButton = Button(frame,
-    text="submit",
-    command=functools.partial(problem_three_display_answer,
-      tree,
-      frame,
-      pprompt,
-      qprompt)
-    )
-  submitButton.grid(row=1, column=4)
 
 def problem_three_display_answer(tree, frame, p, q):
   helpers.clear_row(frame, 2)

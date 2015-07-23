@@ -20,7 +20,7 @@ def problem_one_view(tree, frame, event):
     frame,
     problemText,
     promptText,
-    problem_two_display_answer
+    problem_one_display_answer
     )
 
 def problem_one_display_answer(tree, frame, alpha):

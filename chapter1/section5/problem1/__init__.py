@@ -13,34 +13,17 @@ def problem_one_view(tree, frame, event):
   helpers.clear_frame(frame)
 
   problemText = "Decide if an integer x is divisble by an integer y"
-  promptXText = "Enter a positive integer x:"
-  promptYText = "Enter a positive integer y:"
+  promptXText = "Enter an integer x:"
+  promptYText = "Enter an integer y:"
 
-  prompt = Label(frame, text=problemText)
-  prompt.grid(row=0, columnspan=5)
-
-  xlabel = Label(frame, text=promptXText)
-  xlabel.grid(row=1, column=0)
-
-  xprompt = Entry(frame)
-  xprompt.grid(row=1, column=1)
-
-  ylabel = Label(frame, text=promptYText)
-  ylabel.grid(row=1, column=2)
-
-  yprompt = Entry(frame)
-  yprompt.grid(row=1, column=3)
-
-  submitButton = Button(frame,
-    text="submit",
-    command=functools.partial(problem_one_display_answer,
-      tree,
-      frame,
-      xprompt,
-      yprompt)
-    )
-  submitButton.grid(row=1, column=4)
-
+  helpers.generate_two_prompt_and_input(
+    tree,
+    frame,
+    problemText,
+    promptXText,
+    promptYText,
+    problem_one_display_answer
+  )
 
 def problem_one_display_answer(tree, frame, x, y):
   helpers.clear_row(frame, 2)
