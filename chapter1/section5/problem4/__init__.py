@@ -7,21 +7,21 @@ import chapter1.section5.problem4.problem4
 def load_problem_four(tree, frame):
   tree.insert("ch1.5", "end", "ch1.5.4", text="Problem 4", tags=["ch1.5.4"])
   tree.tag_bind("ch1.5.4", '<1>',
-    functools.partial(problem_four_view, tree, frame))
+    functools.partial(problem_four_view, frame))
 
-def problem_four_view(tree, frame, event):
+def problem_four_view(frame, event):
   helpers.clear_frame(frame)
 
   problemText = "Compute the Collatz sequence for a positive integer n"
   promptText = "Enter a positive integer n:"
 
-  helpers.generate_prompt_and_input(tree,
+  helpers.generate_prompt_and_input(
     frame,
     problemText,
     promptText,
     problem_four_display_answer)
 
-def problem_four_display_answer(tree, frame, n):
+def problem_four_display_answer(frame, n):
   helpers.clear_row(frame, 2)
 
   try:

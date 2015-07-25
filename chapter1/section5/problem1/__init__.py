@@ -7,9 +7,9 @@ import chapter1.section5.problem1.problem1
 def load_problem_one(tree, frame):
   tree.insert("ch1.5", "end", "ch1.5.1", text="Problem 1", tags=["ch1.5.1"])
   tree.tag_bind("ch1.5.1", '<1>',
-    functools.partial(problem_one_view, tree, frame))
+    functools.partial(problem_one_view, frame))
 
-def problem_one_view(tree, frame, event):
+def problem_one_view(frame, event):
   helpers.clear_frame(frame)
 
   problemText = "Decide if an integer x is divisble by an integer y"
@@ -17,7 +17,6 @@ def problem_one_view(tree, frame, event):
   promptYText = "Enter an integer y:"
 
   helpers.generate_two_prompt_and_input(
-    tree,
     frame,
     problemText,
     promptXText,
@@ -25,7 +24,7 @@ def problem_one_view(tree, frame, event):
     problem_one_display_answer
   )
 
-def problem_one_display_answer(tree, frame, x, y):
+def problem_one_display_answer(frame, x, y):
   helpers.clear_row(frame, 2)
 
   try:

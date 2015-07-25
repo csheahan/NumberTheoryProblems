@@ -7,9 +7,9 @@ import chapter1.section3.problem3.problem3
 def load_problem_three(tree, frame):
   tree.insert("ch1.3", "end", "ch1.3.3", text="Problem 3", tags=["ch1.3.3"])
   tree.tag_bind("ch1.3.3", '<1>',
-    functools.partial(problem_three_view, tree, frame))
+    functools.partial(problem_three_view, frame))
 
-def problem_three_view(tree, frame, event):
+def problem_three_view(frame, event):
   helpers.clear_frame(frame)
 
   problemText = "Given a rational number p/q, such that p < q and p and q are "
@@ -18,7 +18,6 @@ def problem_three_view(tree, frame, event):
   qpromptText = "Enter a positive integer q:"
 
   helpers.generate_two_prompt_and_input(
-    tree,
     frame,
     problemText,
     ppromptText,
@@ -27,7 +26,7 @@ def problem_three_view(tree, frame, event):
   )
 
 
-def problem_three_display_answer(tree, frame, p, q):
+def problem_three_display_answer(frame, p, q):
   helpers.clear_row(frame, 2)
 
   try:

@@ -11,7 +11,7 @@ def clear_row(frame, rowNum):
     if (int(widget.grid_info()["row"]) == rowNum):
       widget.destroy()
 
-def generate_prompt_and_input(tree,
+def generate_prompt_and_input(
   frame,
   problemText,
   promptText,
@@ -27,11 +27,10 @@ def generate_prompt_and_input(tree,
 
     submitButton = Button(frame,
       text="submit",
-      command=functools.partial(problemFunction, tree, frame, prompt))
+      command=functools.partial(problemFunction, frame, prompt))
     submitButton.grid(row=1, column=2)
 
 def generate_two_prompt_and_input(
-  tree,
   frame,
   problemText,
   promptOneText,
@@ -56,7 +55,6 @@ def generate_two_prompt_and_input(
       text="submit",
       command=functools.partial(
         problemFunction,
-        tree,
         frame,
         promptOne,
         promptTwo

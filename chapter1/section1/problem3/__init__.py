@@ -7,22 +7,22 @@ import chapter1.section1.problem3.problem3
 def load_problem_three(tree, frame):
   tree.insert("ch1.1", "end", "ch1.1.3", text="Problem 3", tags=["ch1.1.3"])
   tree.tag_bind("ch1.1.3", "<1>",
-    functools.partial(problem_three_view, tree, frame))
+    functools.partial(problem_three_view, frame))
 
-def problem_three_view(tree, frame, event):
+def problem_three_view(frame, event):
   helpers.clear_frame(frame)
 
   problemText = "Find the first n Ulam numbers"
   promptText = "Enter a positive integer n:"
 
-  helpers.generate_prompt_and_input(tree,
+  helpers.generate_prompt_and_input(
     frame,
     problemText,
     promptText,
     problem_three_display_answer
     )
 
-def problem_three_display_answer(tree, frame, alpha):
+def problem_three_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:

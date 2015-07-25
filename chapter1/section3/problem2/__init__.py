@@ -7,23 +7,23 @@ import chapter1.section3.problem2.problem2
 def load_problem_two(tree, frame):
   tree.insert("ch1.3", "end", "ch1.3.2", text="Problem 2", tags=["ch1.3.2"])
   tree.tag_bind("ch1.3.2", '<1>',
-    functools.partial(problem_two_view, tree, frame))
+    functools.partial(problem_two_view, frame))
 
-def problem_two_view(tree, frame, event):
+def problem_two_view(frame, event):
   helpers.clear_frame(frame)
 
   problemText = "Cover a 2^n X 2^n chessboard that is missing one square"
   problemText += "using L-shaped pieces"
   promptText = "Enter a positive integer n:"
 
-  helpers.generate_prompt_and_input(tree,
+  helpers.generate_prompt_and_input(
     frame,
     problemText,
     promptText,
     problem_two_display_answer
     )
 
-def problem_two_display_answer(tree, frame, alpha):
+def problem_two_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:
