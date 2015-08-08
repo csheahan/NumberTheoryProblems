@@ -3,6 +3,7 @@ from Tkinter import *
 import ttk
 
 import chapter1
+import chapter3
 
 # Class containing tk instance
 class App:
@@ -15,6 +16,7 @@ class App:
 
     tree = ttk.Treeview(frame)
     chapter1.load_chapter_one(tree, rightSide)
+    chapter3.load_chapter_three(tree, rightSide)
     tree.pack()
 
 # Make tk root widget
