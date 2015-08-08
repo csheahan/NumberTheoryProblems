@@ -25,6 +25,10 @@ Number Theory Problems
     - [Problem 2][1.5.2]
     - [Problem 3][1.5.3]
     - [Problem 4][1.5.4]
+- Chapter 3: Primes and Greatest Common Divisors
+  - Section 1: Prime Numbers
+    - [Problem 1][3.1.1]
+    - [Problem 2][3.1.2]
 
 ### Documentation ###
 
@@ -59,4 +63,6 @@ of the subject in an environment I enjoy.
 [1.5.2]: chapter1/section5/problem2
 [1.5.3]: chapter1/section5/problem3
 [1.5.4]: chapter1/section5/problem4
+[3.1.1]: chapter3/section1/problem1
+[3.1.2]: chapter3/section1/problem2
 [docs]: Docs
