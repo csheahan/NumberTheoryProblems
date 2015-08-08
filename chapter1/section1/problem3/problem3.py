@@ -8,13 +8,6 @@ Constraints:
 
 Ulam_List = [1, 2, 3, 4, 6, 8, 11, 13, 16]
 
-###############################################################################
-# problem - find the first n Ulam numbers
-# 
-# @param n - n parameter to use
-# 
-# @return A list of the first n ulam numbers
-###
 def problem(n):
   global Ulam_List
   
@@ -40,15 +33,6 @@ def problem(n):
 
       return Ulam_List
 
-###############################################################################
-# isUlamNum - given the current state of  Ulam_List, determines if a number is
-#             a Ulam number or not. If the list is not updated, can and will
-#             return false results
-# 
-# @param num - number to test
-# 
-# @return true if num is an Ulam number relative to Ulam_List, false otherwise
-###
 def isUlamNum(num):
   low = 0
   high = len(Ulam_List) - 1

@@ -3,11 +3,6 @@ Problem:
   List the moves in the tower of Hanoi puzzle
 '''
 
-###############################################################################
-# problem - List the moves in the tower of Hanoi puzzle
-# 
-# @return The list of moves in the tower of Hanoi puzzle
-###
 def problem():
   answer = []
 

@@ -9,14 +9,6 @@ Constraints:
 
 import fractions
 
-###############################################################################
-# problem - Give an Egyptian fraction representation for a fraction p/q
-# 
-# @param p - denomenator of the fraction
-# @param q - numerator of the fraction
-# 
-# @return A list of Tuples representing a series of unit fractions
-###
 def problem(p, q):
   if (p <= 0):
     raise ValueError("p must be a positive integer")

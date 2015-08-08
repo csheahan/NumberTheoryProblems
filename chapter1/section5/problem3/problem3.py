@@ -8,15 +8,6 @@ Constraints:
   b - must be a positive integer
 '''
 
-###############################################################################
-# problem - Calculate the quotient and remainder of the modified division
-#           algorithm given an a and b parameter where a=bq+r
-#           
-# @param a - a parameter to use
-# @param b - b parameter to use
-# 
-# @return A tuple of the form (q, r)
-###
 def problem(a, b):
   if (a <= 0):
     raise ValueError("a must be a positive integer")

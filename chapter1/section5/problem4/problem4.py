@@ -8,13 +8,6 @@ Constraints:
 
 import chapter1.section4.problem1.problem1
 
-###############################################################################
-# problem - Find the Collatz sequence for a positive integer n
-#           
-# @param n - n parameter to use
-# 
-# @return A list containing the numbers used in the Collatz sequence
-###
 def problem(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")

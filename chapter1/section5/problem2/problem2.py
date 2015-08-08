@@ -7,15 +7,6 @@ Constraints:
   b - must be an integer
 '''
 
-###############################################################################
-# problem - Calculate the quotient and remainder of the division algorithm
-#           given an a and b parameter where a=bq+r
-#           
-# @param a - a parameter to use
-# @param b - b parameter to use
-# 
-# @return A tuple of the form (q, r)
-###
 def problem(a, b):
   q = int(a / b)
   r = a - (b * q)

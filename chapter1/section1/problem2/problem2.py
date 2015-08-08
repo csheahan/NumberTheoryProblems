@@ -10,13 +10,6 @@ Constraints:
   α - must be a real number
 '''
 
-###############################################################################
-# problem - find a spectrum sequence of a given number
-# 
-# @param real alpha - α parameter to use
-# 
-# @return A list of integers in the spectrum sequence of α
-###
 def problem(alpha):
   answer = []
 

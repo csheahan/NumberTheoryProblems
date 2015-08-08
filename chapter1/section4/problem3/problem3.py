@@ -8,14 +8,6 @@ Constraints:
 
 import chapter1.section4.problem1.problem1
 
-###############################################################################
-# problem - Find the Zeckendorf representation of an integer
-#           
-# @param n - n parameter to use
-# 
-# @return A list containing the numbers used in the Zeckendorf representation
-#         of n
-###
 def problem(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
