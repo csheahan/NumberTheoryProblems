@@ -1,6 +1,10 @@
 # Load GUI libraries
+import Tkinter
 from Tkinter import *
 import ttk
+
+# Work with weird Tkinter installs
+Tkinter.wantobjects = False
 
 import chapter1
 import chapter3
@@ -18,6 +22,7 @@ class App:
     chapter1.load_chapter_one(tree, rightSide)
     chapter3.load_chapter_three(tree, rightSide)
     tree.pack()
+
 
 # Make tk root widget
 root = Tk()
