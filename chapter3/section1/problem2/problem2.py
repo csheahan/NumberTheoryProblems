@@ -8,22 +8,22 @@ Constraints:
 '''
 
 def problem(n):
-    if (n < 1):
-      raise ValueError("n must be a positive integer")
-    elif (n == 1):
-      return []
+  if (n < 1):
+    raise ValueError("n must be a positive integer")
+  elif (n == 1):
+    return []
 
-    booleanSieve = [True for i in range(n)]
+  booleanSieve = [True for i in xrange(n)]
 
-    booleanSieve[0] = False
-    booleanSieve[1] = False
+  booleanSieve[0] = False
+  booleanSieve[1] = False
 
-    for prime in xrange(2, n):
-      if (booleanSieve[prime]):
-        sieveNum = prime + prime
+  for prime in xrange(2, n):
+    if (booleanSieve[prime]):
+      sieveNum = prime + prime
 
-        while (sieveNum < n):
-          booleanSieve[sieveNum] = False
-          sieveNum += prime
+      while (sieveNum < n):
+        booleanSieve[sieveNum] = False
+        sieveNum += prime
 
-    return [x for x in xrange(n) if booleanSieve[x]]
+  return [x for x in xrange(n) if booleanSieve[x]]
