@@ -23,7 +23,6 @@ class App:
     chapter3.load_chapter_three(tree, rightSide)
     tree.pack()
 
-
 # Make tk root widget
 root = Tk()
 
