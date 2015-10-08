@@ -61,3 +61,14 @@ def generate_two_prompt_and_input(
       )
     )
     submitButton.grid(row=1, column=4)
+
+def handle_error_with_message(err, frame, colspan):
+  clear_row(frame, 2)
+
+  errorText = u"An error has occurred. Type:"
+  errorText += unicode(type(err))
+  errorText += u". Message: "
+  errorText += unicode(str(err))
+
+  errorLabel = Label(frame, text=errorText)
+  errorLabel.grid(row=2, columnspan=colspan)

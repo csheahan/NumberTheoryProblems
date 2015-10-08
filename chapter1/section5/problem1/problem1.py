@@ -8,6 +8,11 @@ Constraints:
 '''
 
 def problem(x, y):
+  if (isinstance(x, float)):
+    raise ValueError("x must be an integer")
+  elif (isinstance(y, float)):
+    raise ValueError("y must be an integer")
+
   if (x % y == 0):
     return True
 

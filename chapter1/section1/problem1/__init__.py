@@ -36,11 +36,5 @@ def problem_one_display_answer(frame, alpha):
       unicode(answer[0][1]))
 
     answerText.grid(row=2, columnspan=3)
-  except:
-    helpers.clear_row(frame, 2)
-
-    errorText = u"An error has occurred. Please ensure that \u03B1 is an"
-    errorText += u" integer"
-
-    errorLabel = Label(frame, text=errorText)
-    errorLabel.grid(row=2, columnspan=3)
+  except Exception as e:
+    helpers.handle_error_with_message(e, frame, 3)

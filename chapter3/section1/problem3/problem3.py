@@ -8,8 +8,12 @@ Constraints:
 
 def problem(n):
   if (n < 1):
-    raise ValueError("n must be a positive integer")
-    
+    raise ValueError(u"pi must be a positive integer")
+  elif (n == 2 or n == 1):
+    return 0
+  elif (n == 3):
+    return 1
+
   return pi(n)
 
 def pi(n):
@@ -34,7 +38,7 @@ def pi(n):
     else:
       pi_array = []
       subset(primesLessThan, i, 0, [0] * i, 0)
-      
+
       for arr in pi_array:
         denom = 1
 
@@ -84,5 +88,3 @@ def sieve(n):
         sieveNum += prime
 
   return [x for x in xrange(n) if booleanSieve[x]]
-
-pi(250)

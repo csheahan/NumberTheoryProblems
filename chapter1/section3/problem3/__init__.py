@@ -43,11 +43,5 @@ def problem_three_display_answer(frame, p, q):
 
     answerText = Label(frame, text=answerLabelText)
     answerText.grid(row=2, columnspan=5)
-  except:
-    helpers.clear_row(frame, 2)
-
-    errorText = "An error has occured. Please ensure that p and q are "
-    errorText += "positive integers and that p < q"
-
-    errorLabel = Label(frame, text=errorText)
-    errorLabel.grid(row=2, columnspan=5)
+  except Exception as e:
+    helpers.handle_error_with_message(e, frame, 5)

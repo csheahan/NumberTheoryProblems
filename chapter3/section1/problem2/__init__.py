@@ -39,11 +39,5 @@ def problem_two_display_answer(frame, n):
     answerLabel = Label(frame, text=answerText)
 
     answerLabel.grid(row=2, columnspan=3)
-  except:
-    helpers.clear_row(frame, 2)
-
-    errorText = "An error has occurred. Please ensure that n is a positive "
-    errorText += "integer"
-
-    errorLabel = Label(frame, text=errorText)
-    errorLabel.grid(row=2, columnspan=3)
+  except Exception as e:
+    helpers.handle_error_with_message(e, frame, 3)

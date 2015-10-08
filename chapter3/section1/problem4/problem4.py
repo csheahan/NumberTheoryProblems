@@ -45,10 +45,13 @@ def getPrimeDivisors(n):
   if n % 2 == 0:
     divisors.append(2)
 
-  for i in xrange(3, int(n ** .5) + 1, 2):
+  for i in xrange(3, n, 2):
     if n % i == 0:
       if isPrime(i):
         divisors.append(i)
+
+  if (isPrime(n)):
+    divisors.append(n)
 
   return divisors
 

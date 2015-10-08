@@ -41,11 +41,5 @@ def problem_one_display_answer(frame, x, y):
 
     answerText = Label(frame, text=answerLabelText)
     answerText.grid(row=2, columnspan=5)
-  except:
-    helpers.clear_row(frame, 2)
-
-    errorText = "An error has occurred. Please ensure that x and y are "
-    errorText += "integers"
-
-    errorLabel = Label(frame, text=errorText)
-    errorLabel.grid(row=2, columnspan=5)
+  except Exception as e:
+    helpers.handle_error_with_message(e, frame, 5)

@@ -11,6 +11,9 @@ Constraints:
 '''
 
 def problem(alpha):
+  if (isinstance(alpha, float)):
+    raise ValueError("n must be an integer")
+
   answers = []
 
   q = alpha
