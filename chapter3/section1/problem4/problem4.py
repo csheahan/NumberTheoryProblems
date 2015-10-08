@@ -1,7 +1,7 @@
 '''
 Problem:
-  Given positive integers a and b not divisible by the same prime, find the 
-  smallest prime number in the arithmetic progression a * n + b, where n is a 
+  Given positive integers a and b not divisible by the same prime, find the
+  smallest prime number in the arithmetic progression a * n + b, where n is a
   positive integer.
 
 Constraints:
@@ -65,5 +65,3 @@ def isPrime(n):
       return False
 
   return True
-
-print problem(9, 8)

@@ -4,7 +4,7 @@ import functools
 import helpers
 import chapter3.section1.problem3.problem3
 
-def load_problem_three(tree, frame):
+def load_problem(tree, frame):
   tree.insert("ch3.1", "end", "ch3.1.3", text="Problem 3", tags=["ch3.1.3"])
   tree.tag_bind("ch3.1.3", '<1>',
     functools.partial(problem_three_view, frame))
@@ -28,7 +28,7 @@ def problem_three_display_answer(frame, n):
   try:
     answer = chapter3.section1.problem3.problem3.problem(int(n.get()))
 
-    answerText = u"\u03C0(" + unicode(n.get()) + u") = " 
+    answerText = u"\u03C0(" + unicode(n.get()) + u") = "
     answerText += unicode(str(answer))
     answerLabel = Label(frame, text=answerText)
 

@@ -4,7 +4,7 @@ import functools
 import helpers
 import chapter1.section1.problem1.problem1
 
-def load_problem_one(tree, frame):
+def load_problem(tree, frame):
   tree.insert("ch1.1", "end", "ch1.1.1", text="Problem 1", tags=["ch1.1.1"])
   tree.tag_bind("ch1.1.1", '<1>',
     functools.partial(problem_one_view, frame))
@@ -34,7 +34,7 @@ def problem_one_display_answer(frame, alpha):
       unicode(answer[0][2]) + u" \u2264 " + unicode(answer[0][3]) +
       u" when p=" + unicode(answer[0][0]) + u" and q=" +
       unicode(answer[0][1]))
-    
+
     answerText.grid(row=2, columnspan=3)
   except:
     helpers.clear_row(frame, 2)

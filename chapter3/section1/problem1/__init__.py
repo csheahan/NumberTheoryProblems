@@ -4,7 +4,7 @@ import functools
 import helpers
 import chapter3.section1.problem1.problem1
 
-def load_problem_one(tree, frame):
+def load_problem(tree, frame):
   tree.insert("ch3.1", "end", "ch3.1.1", text="Problem 1", tags=["ch3.1.1"])
   tree.tag_bind("ch3.1.1", '<1>',
     functools.partial(problem_one_view, frame))
