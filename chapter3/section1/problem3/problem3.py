@@ -7,6 +7,9 @@ Constraints:
 '''
 
 def problem(n):
+  if (n < 1):
+    raise ValueError("n must be a positive integer")
+    
   return pi(n)
 
 def pi(n):
