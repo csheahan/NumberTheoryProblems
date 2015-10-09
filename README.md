@@ -31,6 +31,7 @@ Number Theory Problems
     - [Problem 2][3.1.2]
     - [Problem 3][3.1.3]
     - [Problem 4][3.1.4]
+    - [Problem 5][3.1.5]
 
 ### Documentation ###
 
@@ -69,4 +70,5 @@ of the subject in an environment I enjoy.
 [3.1.2]: chapter3/section1/problem2
 [3.1.3]: chapter3/section1/problem3
 [3.1.4]: chapter3/section1/problem4
+[3.1.5]: chapter3/section1/problem5
 [docs]: Docs
