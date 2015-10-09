@@ -19,8 +19,8 @@ class App:
     rightSide.pack(side=LEFT)
 
     tree = ttk.Treeview(frame)
-    chapter1.load_chapter_one(tree, rightSide)
-    chapter3.load_chapter_three(tree, rightSide)
+    chapter1.load_chapter(tree, rightSide)
+    chapter3.load_chapter(tree, rightSide)
     tree.pack()
 
 # Make tk root widget
