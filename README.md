@@ -36,6 +36,7 @@ Number Theory Problems
     - [Problem 1][3.3.1]
     - [Problem 2][3.3.2]
   - Section 4: The Euclidean Algorithm
+    - [Problem 1][3.4.1]
 
 ### Documentation ###
 
@@ -77,4 +78,5 @@ of the subject in an environment I enjoy.
 [3.1.5]: chapter3/section1/problem5
 [3.3.1]: chapter3/section3/problem1
 [3.3.2]: chapter3/section3/problem2
+[3.4.1]: chapter3/section4/problem1
 [docs]: Docs
