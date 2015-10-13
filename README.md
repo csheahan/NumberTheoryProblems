@@ -32,7 +32,7 @@ Number Theory Problems
     - [Problem 3][3.1.3]
     - [Problem 4][3.1.4]
     - [Problem 5][3.1.5]
-  - Section 3: Greates Common Divisors
+  - Section 3: Greatest Common Divisors
     - [Problem 1][3.3.1]
     - [Problem 2][3.3.2]
 
