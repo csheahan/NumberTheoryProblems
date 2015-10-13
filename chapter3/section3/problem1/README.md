@@ -1,4 +1,4 @@
-Chapter 3 Section 1 Problem 5
+Chapter 3 Section 3 Problem 1
 =============================
 
 - [Thoughts][thoughts]

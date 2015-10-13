@@ -21,9 +21,12 @@ def problem(m, n):
   return gcd
 
 def getDivisors(n):
+  if n == 1:
+    return [1]
+
   divisors = []
 
-  for i in xrange(1, (n / 2) + 1):
+  for i in xrange(1, n + 1):
     if n % i == 0:
       divisors.append(i)
 

@@ -34,6 +34,7 @@ Number Theory Problems
     - [Problem 5][3.1.5]
   - Section 3: Greates Common Divisors
     - [Problem 1][3.3.1]
+    - [Problem 2][3.3.2]
 
 ### Documentation ###
 
@@ -74,4 +75,5 @@ of the subject in an environment I enjoy.
 [3.1.4]: chapter3/section1/problem4
 [3.1.5]: chapter3/section1/problem5
 [3.3.1]: chapter3/section3/problem1
+[3.3.2]: chapter3/section3/problem2
 [docs]: Docs
