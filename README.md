@@ -35,6 +35,7 @@ Number Theory Problems
   - Section 3: Greatest Common Divisors
     - [Problem 1][3.3.1]
     - [Problem 2][3.3.2]
+  - Section 4: The Euclidean Algorithm
 
 ### Documentation ###
 
