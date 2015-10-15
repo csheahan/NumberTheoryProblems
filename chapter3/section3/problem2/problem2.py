@@ -9,6 +9,9 @@ Constraints:
 import chapter3.section3.problem1
 
 def problem(n):
+  if (n < 1):
+    raise ValueError("n must be a positive integer")
+    
   fractions = []
 
   fractions.append((0, 1))

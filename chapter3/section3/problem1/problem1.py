@@ -9,6 +9,11 @@ Constraints:
 '''
 
 def problem(m, n):
+  if (n < 1):
+    raise ValueError("n must be a positive integer")
+  if (m < 1):
+    raise ValueError("m must be a positive integer")
+
   mDivisors = getDivisors(m)
   nDivisors = getDivisors(n)
 

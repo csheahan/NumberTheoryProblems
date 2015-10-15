@@ -2,17 +2,17 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section4.problem1.problem1
+import chapter3.section4.problem2.problem2
 
 def load_problem(tree, frame):
-  tree.insert("ch3.4", "end", "ch3.4.1", text="Problem 1", tags=["ch3.4.1"])
-  tree.tag_bind("ch3.4.1", '<1>',
-    functools.partial(problem_one_view, frame))
+  tree.insert("ch3.4", "end", "ch3.4.2", text="Problem 2", tags=["ch3.4.2"])
+  tree.tag_bind("ch3.4.2", '<1>',
+    functools.partial(problem_two_view, frame))
 
-def problem_one_view(frame, event):
+def problem_two_view(frame, event):
   helpers.clear_frame(frame)
 
-  problemText = "Calculate (a, b) via the Euclidean algorithm"
+  problemText = "Calculate (a, b) via the least-remainder algorithm"
   promptAText = "Enter an integer a:"
   promptBText = "Enter an integer b:"
 
@@ -21,14 +21,14 @@ def problem_one_view(frame, event):
     problemText,
     promptAText,
     promptBText,
-    problem_one_display_answer
+    problem_two_display_answer
   )
 
-def problem_one_display_answer(frame, a, b):
+def problem_two_display_answer(frame, a, b):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section4.problem1.problem1.problem(
+    answer = chapter3.section4.problem2.problem2.problem(
       int(b.get()),
       int(a.get())
     )
