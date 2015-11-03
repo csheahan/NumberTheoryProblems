@@ -40,7 +40,7 @@ Number Theory Problems
     - [Problem 2][3.4.2]
     - [Problem 3][3.4.3]
     - [Problem 4][3.4.4]
-    - [Problem 4][3.4.5]
+    - [Problem 5][3.4.5]
 
 ### Documentation ###
 
