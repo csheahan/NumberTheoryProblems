@@ -41,6 +41,7 @@ Number Theory Problems
     - [Problem 3][3.4.3]
     - [Problem 4][3.4.4]
     - [Problem 5][3.4.5]
+  - Section 5: The Fundamental Theorem of Arithmetic
 
 ### Documentation ###
 
