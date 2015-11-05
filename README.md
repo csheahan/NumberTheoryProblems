@@ -41,6 +41,8 @@ Number Theory Problems
     - [Problem 3][3.4.3]
     - [Problem 4][3.4.4]
     - [Problem 5][3.4.5]
+    - [Problem 6 (Not Implemented)][3.4.6]
+    - [Problem 7 (Not Implemented)][3.4.7]
   - Section 5: The Fundamental Theorem of Arithmetic
 
 ### Documentation ###
@@ -88,4 +90,6 @@ of the subject in an environment I enjoy.
 [3.4.3]: chapter3/section4/problem3
 [3.4.4]: chapter3/section4/problem4
 [3.4.5]: chapter3/section4/problem5
+[3.4.6]: chapter3/section4/problem6
+[3.4.7]: chapter3/section4/problem7
 [docs]: Docs
