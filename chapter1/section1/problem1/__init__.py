@@ -12,7 +12,7 @@ def load_problem(tree, frame):
 def problem_one_view(frame, event):
   helpers.clear_frame(frame)
 
-  problemText = u"Given a number \u03B1, find rational number p/q such that "
+  problemText = u"Given a number \u03B1, find a rational number p/q such that "
   problemText += u"|\u03B1 - p/q| \u2264 1/q^2"
   promptText = u"Enter an integer \u03B1:"
 

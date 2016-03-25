@@ -9,38 +9,49 @@ Number Theory Problems
 
 - Chapter 1: The Integers
   - Section 1: Numbers and Sequences
-    - [Problem 1][1.1.1]
-    - [Problem 2][1.1.2]
-    - [Problem 3][1.1.3]
+    - [Problem 1][1.1.1] - Given a number a, find 2 numbers p,q such that the
+                           following equation is satisfied: `|a - p/q| <= 1/q^2`
+    - [Problem 2][1.1.2] - Find the spectrum sequence of a number.
+    - [Problem 3][1.1.3] - Find the first n Ulam numbers.
   - Section 3: Mathematical Induction
-    - [Problem 1][1.3.1]
-    - [Problem 2][1.3.2]
-    - [Problem 3][1.3.3]
+    - [Problem 1][1.3.1] - List the moves in the Tower of Hanoi puzzle
+    - [Problem 2][1.3.2] - Cover a chessboard missing 1 square with L-shaped
+                           pieces
+    - [Problem 3][1.3.3] - Given a fraction p\q, express p\q as an Egyptian
+                           fraction
   - Section 4: The Fibonacci Numbers
-    - [Problem 1][1.4.1]
-    - [Problem 2][1.4.2]
-    - [Problem 3][1.4.3]
+    - [Problem 1][1.4.1] - Find the first n terms of the Fibonacci sequence.
+    - [Problem 2][1.4.2] - Find the first n Lucas numbers.
+    - [Problem 3][1.4.3] - Find the Zeckendorf representation of an integer
   - Section 5: Divisibility
-    - [Problem 1][1.5.1]
-    - [Problem 2][1.5.2]
-    - [Problem 3][1.5.3]
-    - [Problem 4][1.5.4]
+    - [Problem 1][1.5.1] - Decide if an integer x is divisible by an integer y
+    - [Problem 2][1.5.2] - Find q,r given a,b of the formula `a = b * q + r`
+    - [Problem 3][1.5.3] - Find q,r given a,b of the formula `a = b * q + r`,
+                           where `-b/2 < r <= b/2`
+    - [Problem 4][1.5.4] - Compute the Collatz sequence for a positive integer.
 - Chapter 3: Primes and Greatest Common Divisors
   - Section 1: Prime Numbers
-    - [Problem 1][3.1.1]
-    - [Problem 2][3.1.2]
-    - [Problem 3][3.1.3]
-    - [Problem 4][3.1.4]
-    - [Problem 5][3.1.5]
+    - [Problem 1][3.1.1] - Determine if a number is prime via trial division
+    - [Problem 2][3.1.2] - Use the sieve of Eratosthenes to find all primes not
+                           exceeding a positive integer
+    - [Problem 3][3.1.3] - Calculate the number of primes not exceeding an
+                           integer using a recursive sequence
+    - [Problem 4][3.1.4] - Given a,b find the smalles prime `a * n + b` where
+                           `a != b`
+    - [Problem 5][3.1.5] - Find the lucky numbers less than a positive integer
   - Section 3: Greatest Common Divisors
-    - [Problem 1][3.3.1]
-    - [Problem 2][3.3.2]
+    - [Problem 1][3.3.1] - Calculate the GCD of 2 integers
+    - [Problem 2][3.3.2] - List the Farey series of order n
   - Section 4: The Euclidean Algorithm
-    - [Problem 1][3.4.1]
-    - [Problem 2][3.4.2]
-    - [Problem 3][3.4.3]
-    - [Problem 4][3.4.4]
-    - [Problem 5][3.4.5]
+    - [Problem 1][3.4.1] - Calculate the GCD of 2 integers via the Euclidean
+                           algorithm
+    - [Problem 2][3.4.2] - Calculate the GCD of 2 integers via the
+                           least-remainder algorithm
+    - [Problem 3][3.4.3] - Calculate the GCD of 2 integers without using
+                           division
+    - [Problem 4][3.4.4] - Calculate the GCD of a list of integers
+    - [Problem 5][3.4.5] - Calculate the Bezout coefficients for 2 positive
+                           integers.
     - [Problem 6 (Not Implemented)][3.4.6]
     - [Problem 7 (Not Implemented)][3.4.7]
   - Section 5: The Fundamental Theorem of Arithmetic
