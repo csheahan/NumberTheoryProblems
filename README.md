@@ -55,6 +55,8 @@ Number Theory Problems
     - [Problem 6 (Not Implemented)][3.4.6]
     - [Problem 7 (Not Implemented)][3.4.7]
   - Section 5: The Fundamental Theorem of Arithmetic
+    - [Problem 1][3.5.1] - Find all divisors of a number via it's prime
+                           factorization.
 
 ### Documentation ###
 
@@ -103,4 +105,5 @@ of the subject in an environment I enjoy.
 [3.4.5]: chapter3/section4/problem5
 [3.4.6]: chapter3/section4/problem6
 [3.4.7]: chapter3/section4/problem7
+[3.5.1]: chapter3/section5/problem1
 [docs]: Docs
