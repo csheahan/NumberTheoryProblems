@@ -11,8 +11,8 @@ Number Theory Problems
   - Section 1: Numbers and Sequences
     - [Problem 1][1.1.1] - Given a number a, find 2 numbers p,q such that the
                            following equation is satisfied: `|a - p/q| <= 1/q^2`
-    - [Problem 2][1.1.2] - Find the spectrum sequence of a number.
-    - [Problem 3][1.1.3] - Find the first n Ulam numbers.
+    - [Problem 2][1.1.2] - Find the spectrum sequence of a number
+    - [Problem 3][1.1.3] - Find the first n Ulam numbers
   - Section 3: Mathematical Induction
     - [Problem 1][1.3.1] - List the moves in the Tower of Hanoi puzzle
     - [Problem 2][1.3.2] - Cover a chessboard missing 1 square with L-shaped
@@ -20,15 +20,15 @@ Number Theory Problems
     - [Problem 3][1.3.3] - Given a fraction p\q, express p\q as an Egyptian
                            fraction
   - Section 4: The Fibonacci Numbers
-    - [Problem 1][1.4.1] - Find the first n terms of the Fibonacci sequence.
-    - [Problem 2][1.4.2] - Find the first n Lucas numbers.
+    - [Problem 1][1.4.1] - Find the first n terms of the Fibonacci sequence
+    - [Problem 2][1.4.2] - Find the first n Lucas numbers
     - [Problem 3][1.4.3] - Find the Zeckendorf representation of an integer
   - Section 5: Divisibility
     - [Problem 1][1.5.1] - Decide if an integer x is divisible by an integer y
     - [Problem 2][1.5.2] - Find q,r given a,b of the formula `a = b * q + r`
     - [Problem 3][1.5.3] - Find q,r given a,b of the formula `a = b * q + r`,
                            where `-b/2 < r <= b/2`
-    - [Problem 4][1.5.4] - Compute the Collatz sequence for a positive integer.
+    - [Problem 4][1.5.4] - Compute the Collatz sequence for a positive integer
 - Chapter 3: Primes and Greatest Common Divisors
   - Section 1: Prime Numbers
     - [Problem 1][3.1.1] - Determine if a number is prime via trial division
@@ -51,12 +51,14 @@ Number Theory Problems
                            division
     - [Problem 4][3.4.4] - Calculate the GCD of a list of integers
     - [Problem 5][3.4.5] - Calculate the Bezout coefficients for 2 positive
-                           integers.
+                           integers
     - [Problem 6 (Not Implemented)][3.4.6]
     - [Problem 7 (Not Implemented)][3.4.7]
   - Section 5: The Fundamental Theorem of Arithmetic
     - [Problem 1][3.5.1] - Find all divisors of a number via it's prime
-                           factorization.
+                           factorization
+    - [Problem 2][3.5.2] - Find the GCD of 2 numbers via their prime
+                           factorization
 
 ### Documentation ###
 
@@ -106,4 +108,5 @@ of the subject in an environment I enjoy.
 [3.4.6]: chapter3/section4/problem6
 [3.4.7]: chapter3/section4/problem7
 [3.5.1]: chapter3/section5/problem1
+[3.5.2]: chapter3/section5/problem2
 [docs]: Docs
