@@ -59,6 +59,8 @@ Number Theory Problems
                            factorization
     - [Problem 2][3.5.2] - Find the GCD of 2 numbers via their prime
                            factorization
+    - [Problem 3][3.5.3] - Find the LCM of 2 numbers via their prime
+                           factorization
 
 ### Documentation ###
 
@@ -109,4 +111,5 @@ of the subject in an environment I enjoy.
 [3.4.7]: chapter3/section4/problem7
 [3.5.1]: chapter3/section5/problem1
 [3.5.2]: chapter3/section5/problem2
+[3.5.3]: chapter3/section5/problem3
 [docs]: Docs
