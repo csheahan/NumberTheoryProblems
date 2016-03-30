@@ -7,7 +7,26 @@ Constraints:
   n - must be a positive integer
 '''
 
+import math
+
 def problem(n):
+  if (n < 1):
+    raise ValueError("n must be a positive integer")
+
+  prime = 5
+  power = 1
+  zeroes = 0
+
+  while (prime ** power <= n):
+    zeroes += int(math.floor(n / (prime ** power)))
+    power += 1
+
+  return zeroes
+
+########################################
+# Old Solution
+
+def old_problem(n):
   if (n < 1):
     raise ValueError("n must be a positive integer")
 

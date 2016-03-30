@@ -2,8 +2,44 @@ Chapter 3 Section 5 Problem 3
 =============================
 
 - [Thoughts][thoughts]
+  - [Proof][proofs]
+- [Old Thoughts][old_thoughts]
 
 ### Thoughts ###
+
+As mentioned before, this is a problem that can be brute forced, but also has a
+cool, clever solution. This approach makes use of the "intuition" mentioned in
+the old thoughts, of which I will prove works. Also note I am doing this proof
+without outside help, thus there is probably and more likely most definitely
+a better and more formal way to do this.
+
+#### Proof ####
+
+```
+We first start this proof with an observation. Note that 10^x = 2^(x-1) *
+5^(x-1). This can be proven for any power of 10 via a simple induction proof.
+This observation is important because of our objective: find the number of 0's
+at the end the decimal expansion. Each 0 corresponds to a power of 10.
+
+Now, we find out the connection to 5's. It is obvious via the above observation
+that the 0's at the end are dependent on the number of 2's and 5's in the prime
+factorization of n!. However, we can prove that the number of 2's is irrelevant
+and that the bottleneck is the 5's.
+
+From the book, we know that the exponent of a prime p in the prime power
+factorization of a factorial number n! is [n/p] + [n/p^2] + ... Thus, we have
+[n/2] + [n/4] + ... and [n/5] + [n/25] + ... Because the numerators are always
+n, then it can be seen through observation that there will always be at least
+more 2's than 5's because [n/2] >= [n/5], [n/2^2] >= [n/5^2], ... Thus, the 5's
+are the bottleneck of the powers of 10 because the number of 2's is greater
+than or equal to the number of 5's.
+
+Thus, we now need to calculate the number of 5's in the prime power
+factorization of n!, which as stated above is [n/p] + [n/p^2] + ... which is
+what we observed in our intuition.
+```
+
+### Old Thoughts ###
 
 This is an interesting problem, at least when I think about it. I took the
 straight forward approach, e.g. calculate n! then test how many 0's are at the
@@ -36,3 +72,5 @@ I find a satisfiable proof, I'll redo the problem using this prime factorization
 method (which would also be so much more efficient) to solve the problem.
 
 [thoughts]: #thoughts
+[proofs]: #proof
+[old_thoughts]: #oldthoughts
