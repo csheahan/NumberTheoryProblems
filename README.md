@@ -63,6 +63,8 @@ Number Theory Problems
                            factorization
     - [Problem 4][3.5.4] - Find the number of zeros at the end of n!
     - [Problem 5][3.5.5] - Find the prime factorization of n!
+    - [Problem 6][3.5.6] - Find the number of powerful numbers less than a
+                           positive integer
 
 ### Documentation ###
 
@@ -116,4 +118,5 @@ of the subject in an environment I enjoy.
 [3.5.3]: chapter3/section5/problem3
 [3.5.4]: chapter3/section5/problem4
 [3.5.5]: chapter3/section5/problem5
+[3.5.6]: chapter3/section5/problem6
 [docs]: Docs
