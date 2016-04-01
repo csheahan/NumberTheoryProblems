@@ -19,9 +19,6 @@ def problem(a,b):
   a_prime_factor_list = chapter3.section5.problem1.problem1.getPrimeFactors(a)
   b_prime_factor_list = chapter3.section5.problem1.problem1.getPrimeFactors(b)
 
-  print a_prime_factor_list
-  print b_prime_factor_list
-
   gcd = 1
 
   for i in xrange(len(a_prime_factor_list) - 1, -1, -1):
