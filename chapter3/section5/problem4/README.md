@@ -26,13 +26,24 @@ that the 0's at the end are dependent on the number of 2's and 5's in the prime
 factorization of n!. However, we can prove that the number of 2's is irrelevant
 and that the bottleneck is the 5's.
 
-From the book, we know that the exponent of a prime p in the prime power
+Now we need to perform a little minit proof. We need to prove that the exponent
+of a prime p in the prime power factorization of a factorial number n! is
+[n/p] + [n/p^2] ... where [] is the floor function. This proof takes advantage
+of the fact that n! = n * n-1 * n-2 * ... * 1. To find the exponent of p, we
+first calculate the number of positive integers not exceeding n that are
+divisible by p. This should result in [n/p], because p < n and thus
+divides itself, then it also divides all integers m * p such that m * p <= n.
+However, now we need to consider p^2, as it's prime power factorization is
+p * p. Similar logic follows, thus there are [n/p^2] numbers in n! divisible by
+p^2. Using this, it follows that the exponent of of p is [n/p] + [n/p^2] + ...
+
+From the above, we know that the exponent of a prime p in the prime power
 factorization of a factorial number n! is [n/p] + [n/p^2] + ... Thus, we have
 [n/2] + [n/4] + ... and [n/5] + [n/25] + ... Because the numerators are always
 n, then it can be seen through observation that there will always be at least
 more 2's than 5's because [n/2] >= [n/5], [n/2^2] >= [n/5^2], ... Thus, the 5's
-are the bottleneck of the powers of 10 because the number of 2's is greater
-than or equal to the number of 5's.
+are the bottleneck of the powers of 10 because the number of 2's is greater than
+or equal to the number of 5's.
 
 Thus, we now need to calculate the number of 5's in the prime power
 factorization of n!, which as stated above is [n/p] + [n/p^2] + ... which is
