@@ -62,6 +62,7 @@ Number Theory Problems
     - [Problem 3][3.5.3] - Find the LCM of 2 numbers via their prime
                            factorization
     - [Problem 4][3.5.4] - Find the number of zeros at the end of n!
+    - [Problem 5][3.5.5] - Find the prime factorization of n!
 
 ### Documentation ###
 
@@ -114,4 +115,5 @@ of the subject in an environment I enjoy.
 [3.5.2]: chapter3/section5/problem2
 [3.5.3]: chapter3/section5/problem3
 [3.5.4]: chapter3/section5/problem4
+[3.5.5]: chapter3/section5/problem5
 [docs]: Docs
