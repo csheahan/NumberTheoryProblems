@@ -65,6 +65,7 @@ Number Theory Problems
     - [Problem 5][3.5.5] - Find the prime factorization of n!
     - [Problem 6][3.5.6] - Find the number of powerful numbers less than a
                            positive integer
+  - Section 7: Linear Diophantine Equations
 
 ### Documentation ###
 
