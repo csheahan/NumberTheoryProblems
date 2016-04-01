@@ -23,7 +23,6 @@ def problem(a,b):
 
   for i in xrange(len(a_prime_factor_list) - 1, -1, -1):
     item = a_prime_factor_list[i]
-    print item
     if item in b_prime_factor_list:
       gcd *= item
       a_prime_factor_list.pop(i)
