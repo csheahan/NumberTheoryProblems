@@ -62,6 +62,46 @@ def generate_two_prompt_and_input(
     )
     submitButton.grid(row=1, column=4)
 
+def generate_three_prompt_and_input(
+  frame,
+  problemText,
+  promptOneText,
+  promptTwoText,
+  promptThreeText,
+  problemFunction):
+    prompt = Label(frame, text=problemText)
+    prompt.grid(row=0, columnspan=5)
+
+    entryLabelOne = Label(frame, text=promptOneText)
+    entryLabelOne.grid(row=1, column=0)
+
+    promptOne = Entry(frame)
+    promptOne.grid(row=1, column=1)
+
+    entryLabelTwo = Label(frame, text=promptTwoText)
+    entryLabelTwo.grid(row=1, column=2)
+
+    promptTwo = Entry(frame)
+    promptTwo.grid(row=1, column=3)
+
+    entryLabelthree = Label(frame, text=promptThreeText)
+    entryLabelthree.grid(row=1, column=4)
+
+    promptThree = Entry(frame)
+    promptThree.grid(row=1, column=5)
+
+    submitButton = Button(frame,
+      text="submit",
+      command=functools.partial(
+        problemFunction,
+        frame,
+        promptOne,
+        promptTwo,
+        promptThree
+      )
+    )
+    submitButton.grid(row=1, column=6)
+
 def handle_error_with_message(err, frame, colspan):
   clear_row(frame, 2)
 
