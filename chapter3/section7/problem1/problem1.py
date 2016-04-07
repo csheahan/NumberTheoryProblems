@@ -12,11 +12,13 @@ import chapter3.section4.problem1.problem1
 import chapter3.section4.problem5.problem5
 
 def problem(a, b, c):
+  # d = gcd(a,b)
   d = chapter3.section4.problem1.problem1.problem(a, b)
 
   if (c % d != 0):
     return (None, d)
 
+  # The bezout coefficients are m,n from the equation am*bn=gcd(a,b)
   bezout_coefficients = chapter3.section4.problem5.problem5.problem(a, b)
   knot_coefficients = (
     bezout_coefficients[0] * (c / d),
