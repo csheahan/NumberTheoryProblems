@@ -37,7 +37,7 @@ def problem_one_display_answer(frame, a, b, c):
       int(c.get())
     )
 
-    if answer[0] is None:
+    if (answer[0] is None):
       answerText = "There is no answer because gcd(" + a.get() + ", " + b.get()
       answerText += ") = " + str(answer[1]) + " does not divide " + c.get()
     else:
