@@ -13,7 +13,7 @@ import chapter3.section4.problem5.problem5
 
 def problem(a, b, c):
   # d = gcd(a,b)
-  d = chapter3.section4.problem1.problem1.problem(a, b)
+  d = chapter3.section4.problem1.problem1.problem(abs(a), abs(b))
 
   if (c % d != 0):
     return (None, d)
