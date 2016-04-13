@@ -8,7 +8,7 @@ Constraints:
   b - must be a positive integer
 '''
 
-def problem(a, b):
+def solve(a, b):
   if (a <= 0):
     raise ValueError("a must be a positive integer")
   elif (b <= 0):

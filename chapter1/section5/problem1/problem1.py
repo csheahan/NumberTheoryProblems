@@ -7,7 +7,7 @@ Constraints:
   y - must be an integer
 '''
 
-def problem(x, y):
+def solve(x, y):
   if (isinstance(x, float)):
     raise ValueError("x must be an integer")
   elif (isinstance(y, float)):

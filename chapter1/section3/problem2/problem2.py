@@ -9,7 +9,7 @@ Constraints:
 
 Curr_Num = 1
 
-def problem(n):
+def solve(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
 
@@ -17,13 +17,13 @@ def problem(n):
   Curr_Num = 1
 
   bound = 2**n
-  
+
   # Initialize List
   answer = [[' ' for x in xrange(bound)] for x in xrange(bound)]
 
-  return _problem(answer, 0, bound, 0, bound)
+  return _solve(answer, 0, bound, 0, bound)
 
-def _problem(grid, lowx, highx, lowy, highy):
+def _solve(grid, lowx, highx, lowy, highy):
   global Curr_Num
 
   # Base Case: 2x2 square
@@ -53,7 +53,7 @@ def _problem(grid, lowx, highx, lowy, highy):
   else:
     # Use a divide and conquor approach: mark the middle, split into 4 2^n-1
     # squares recursively
-    
+
     # First, mark the center
     centerX = ((lowx + highx) / 2) - 1
     centerY = ((lowy + highy) / 2) - 1
@@ -85,9 +85,9 @@ def _problem(grid, lowx, highx, lowy, highy):
     Curr_Num += 1
 
     # Divide
-    _problem(grid, lowx, centerX + 1, lowy, centerY + 1)
-    _problem(grid, centerX + 1, highx, lowy, centerY + 1)
-    _problem(grid, lowx, centerX + 1, centerY + 1, highy)
-    _problem(grid, centerX + 1, highx, centerY + 1, highy)
+    _solve(grid, lowx, centerX + 1, lowy, centerY + 1)
+    _solve(grid, centerX + 1, highx, lowy, centerY + 1)
+    _solve(grid, lowx, centerX + 1, centerY + 1, highy)
+    _solve(grid, centerX + 1, highx, centerY + 1, highy)
 
   return grid

@@ -8,7 +8,7 @@ Constraints:
 
 fibonacci_sequence = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
-def problem(n):
+def solve(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
 

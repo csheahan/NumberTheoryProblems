@@ -3,12 +3,10 @@ Problem:
   Find the Collatz sequence for a positive integer n
 
 Constraints:
-  n - must be a positive integer  
+  n - must be a positive integer
 '''
 
-import chapter1.section4.problem1.problem1
-
-def problem(n):
+def solve(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
 

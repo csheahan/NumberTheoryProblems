@@ -1,11 +1,11 @@
 from Tkinter import *
 import ttk
-import chapter1.section4.problem1
-import chapter1.section4.problem2
-import chapter1.section4.problem3
+from chapter1.section4 import problem1 as problem1
+from chapter1.section4 import problem2 as problem2
+from chapter1.section4 import problem3 as problem3
 
 def load_section(tree, frame):
   tree.insert("ch1", "end", "ch1.4", text="Section 4")
-  chapter1.section4.problem1.load_problem(tree, frame)
-  chapter1.section4.problem2.load_problem(tree, frame)
-  chapter1.section4.problem3.load_problem(tree, frame)
+  problem1.load_problem(tree, frame)
+  problem2.load_problem(tree, frame)
+  problem3.load_problem(tree, frame)

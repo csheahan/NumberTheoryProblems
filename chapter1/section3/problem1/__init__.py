@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section3.problem1.problem1
+from chapter1.section3.problem1 import problem1 as problem1
 
 def load_problem(tree, frame):
   tree.insert("ch1.3", "end", "ch1.3.1", text="Problem 1", tags=["ch1.3.1"])
@@ -17,7 +17,7 @@ def problem_one_view(frame, event):
   prompt = Label(frame, text=problemText)
   prompt.grid(row=0)
 
-  answer = chapter1.section3.problem1.problem1.problem()
+  answer = problem1.solve()
 
   answerText = "The following valid moves in the tower of Hanoi puzzle: "
 

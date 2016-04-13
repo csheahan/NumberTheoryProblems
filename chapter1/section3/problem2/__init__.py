@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section3.problem2.problem2
+from chapter1.section3.problem2 import problem2 as problem2
 
 def load_problem(tree, frame):
   tree.insert("ch1.3", "end", "ch1.3.2", text="Problem 2", tags=["ch1.3.2"])
@@ -27,7 +27,7 @@ def problem_two_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter1.section3.problem2.problem2.problem(int(alpha.get()))
+    answer = problem2.solve(int(alpha.get()))
     longestNum = len(answer[len(answer) - 1][len(answer) - 2]) + 1
 
     answerLabelText = "A 2^" + alpha.get() + " x 2^" + alpha.get() + " "

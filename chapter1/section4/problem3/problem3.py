@@ -3,19 +3,19 @@ Problem:
   Find the Zeckendorf representation of an integer
 
 Constraints:
-  n - must be a positive integer  
+  n - must be a positive integer
 '''
 
-import chapter1.section4.problem1.problem1
+from chapter1.section4.problem1 import problem1 as fib_solver
 
-def problem(n):
+def solve(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
 
   if (n == 1):
     return [1]
 
-  fibonacci_sequence = chapter1.section4.problem1.problem1.fibonacci_sequence
+  fibonacci_sequence = fib_solver.fibonacci_sequence
 
   if (fibonacci_sequence[-1] <= n):
     while (fibonacci_sequence[-1] <= n):
@@ -36,7 +36,7 @@ def problem(n):
   return answer
 
 def calc_zeckendorf(idx, target):
-  fibonacci_sequence = chapter1.section4.problem1.problem1.fibonacci_sequence
+  fibonacci_sequence = fib_solver.fibonacci_sequence
 
   if (idx < 0):
     return []
@@ -56,7 +56,7 @@ def calc_zeckendorf(idx, target):
         return check
 
       tempIdx -= 1
-    
+
     return calc_zeckendorf(idx - 1, target)
   else:
     return []

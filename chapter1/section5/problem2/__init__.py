@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section5.problem2.problem2
+from chapter1.section5.problem2 import problem2 as problem2
 
 def load_problem(tree, frame):
   tree.insert("ch1.5", "end", "ch1.5.2", text="Problem 2", tags=["ch1.5.2"])
@@ -29,10 +29,7 @@ def problem_two_display_answer(frame, a, b):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter1.section5.problem2.problem2.problem(
-      int(a.get()),
-      int(b.get())
-    )
+    answer = problem2.solve(int(a.get()), int(b.get()))
 
     answerLabelText = "The quotient is " + str(answer[0]) + " and the "
     answerLabelText += "remainder is " + str(answer[1]) + ", or in other "

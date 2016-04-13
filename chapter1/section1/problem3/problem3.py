@@ -8,9 +8,9 @@ Constraints:
 
 Ulam_List = [1, 2, 3, 4, 6, 8, 11, 13, 16]
 
-def problem(n):
+def solve(n):
   global Ulam_List
-  
+
   if (n <= 0):
     raise ValueError("n must be a positive integer")
   elif (n == 1):

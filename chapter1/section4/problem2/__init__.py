@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section4.problem2.problem2
+from chapter1.section4.problem2 import problem2 as problem2
 
 def load_problem(tree, frame):
   tree.insert("ch1.4", "end", "ch1.4.2", text="Problem 2", tags=["ch1.4.2"])
@@ -25,7 +25,7 @@ def problem_two_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter1.section4.problem2.problem2.problem(int(alpha.get()))
+    answer = problem2.solve(int(alpha.get()))
 
     answerLabelText = "The first " + alpha.get() + " Lucas numbers are: "
 

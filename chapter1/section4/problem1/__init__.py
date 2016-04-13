@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section4.problem1.problem1
+from chapter1.section4.problem1 import problem1 as problem1
 
 def load_problem(tree, frame):
   tree.insert("ch1.4", "end", "ch1.4.1", text="Problem 1", tags=["ch1.4.1"])
@@ -25,7 +25,7 @@ def problem_one_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter1.section4.problem1.problem1.problem(int(alpha.get()))
+    answer = problem1.solve(int(alpha.get()))
 
     answerLabelText = "The first " + alpha.get() + " Fibonacci numbers are: "
 

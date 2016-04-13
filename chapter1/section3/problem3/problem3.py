@@ -9,7 +9,7 @@ Constraints:
 
 import fractions
 
-def problem(p, q):
+def solve(p, q):
   if (p <= 0):
     raise ValueError("p must be a positive integer")
   elif (q <= 0):
@@ -23,7 +23,7 @@ def problem(p, q):
 
   guessDenom = 1
   guess = fractions.Fraction(1, guessDenom)
-  
+
   while (current != 0):\
 
     while (guess > current):

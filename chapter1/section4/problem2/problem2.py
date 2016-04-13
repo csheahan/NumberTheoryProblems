@@ -8,7 +8,7 @@ Constraints:
 
 lucas_numbers = [1, 3, 4, 7, 11, 18, 29, 47, 76, 123]
 
-def problem(n):
+def solve(n):
   if (n <= 0):
     raise ValueError("n must be a positive integer")
 

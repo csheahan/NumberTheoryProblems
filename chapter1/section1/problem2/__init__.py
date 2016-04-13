@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section1.problem2.problem2
+from chapter1.section1.problem2 import problem2 as problem2
 
 def load_problem(tree, frame):
   tree.insert("ch1.1", "end", "ch1.1.2", text="Problem 2", tags=["ch1.1.2"])
@@ -26,7 +26,7 @@ def problem_two_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter1.section1.problem2.problem2.problem(float(alpha.get()))
+    answer = problem2.solve(float(alpha.get()))
 
     answerLabelText = u"With an \u03B1 of " + unicode(float(alpha.get()))
     answerLabelText += u", we have a spectrum sequnce of ["

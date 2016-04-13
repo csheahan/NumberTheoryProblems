@@ -10,7 +10,7 @@ Constraints:
   q - must be an integer s.t. q != 0
 '''
 
-def problem(alpha):
+def solve(alpha):
   if (isinstance(alpha, float)):
     raise ValueError("n must be an integer")
 

@@ -3,7 +3,7 @@ Problem:
   List the moves in the tower of Hanoi puzzle
 '''
 
-def problem():
+def solve():
   answer = []
 
   for i in xrange(1, 4):

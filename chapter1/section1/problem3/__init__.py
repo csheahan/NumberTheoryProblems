@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter1.section1.problem3.problem3
+from chapter1.section1.problem3 import problem3 as problem3
 
 def load_problem(tree, frame):
   tree.insert("ch1.1", "end", "ch1.1.3", text="Problem 3", tags=["ch1.1.3"])
@@ -26,7 +26,7 @@ def problem_three_display_answer(frame, alpha):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter1.section1.problem3.problem3.problem(int(alpha.get()))
+    answer = problem3.solve(int(alpha.get()))
 
     answerLabelText = "The first " + alpha.get() + " Ulam numbers are: "
 

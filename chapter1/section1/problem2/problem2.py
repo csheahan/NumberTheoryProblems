@@ -10,7 +10,7 @@ Constraints:
   α - must be a real number
 '''
 
-def problem(alpha):
+def solve(alpha):
   answer = []
 
   for i in xrange(1, 11):
