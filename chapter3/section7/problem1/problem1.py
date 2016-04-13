@@ -8,18 +8,18 @@ Constraints:
   b - integer
 '''
 
-import chapter3.section4.problem1.problem1
-import chapter3.section4.problem5.problem5
+from chapter3.section4.problem1 import problem1 as gcd
+from chapter3.section4.problem5 import problem5 as bezout
 
-def problem(a, b, c):
+def solve(a, b, c):
   # d = gcd(a,b)
-  d = chapter3.section4.problem1.problem1.problem(abs(a), abs(b))
+  d = gcd.solve(abs(a), abs(b))
 
   if (c % d != 0):
     return (None, d)
 
   # The bezout coefficients are m,n from the equation am*bn=gcd(a,b)
-  bezout_coefficients = chapter3.section4.problem5.problem5.problem(a, b)
+  bezout_coefficients = bezout.solve(a, b)
   knot_coefficients = (
     bezout_coefficients[0] * (c / d),
     bezout_coefficients[1] * (c / d)

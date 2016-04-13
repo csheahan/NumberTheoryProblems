@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section7.problem1.problem1
+from chapter3.section7.problem1 import problem1 as problem1
 
 def load_problem(tree, frame):
   tree.insert("ch3.7", "end", "ch3.7.1", text="Problem 1", tags=["ch3.7.1"])
@@ -31,11 +31,7 @@ def problem_one_display_answer(frame, a, b, c):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section7.problem1.problem1.problem(
-      int(a.get()),
-      int(b.get()),
-      int(c.get())
-    )
+    answer = problem1.solve(int(a.get()), int(b.get()), int(c.get()))
 
     if (answer[0] is None):
       answerText = "There is no answer because gcd(" + a.get() + ", " + b.get()

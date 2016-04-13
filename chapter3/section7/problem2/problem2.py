@@ -8,21 +8,21 @@ Constraints:
   b - integer
 '''
 
-import chapter3.section4.problem1.problem1
-import chapter3.section4.problem5.problem5
+from chapter3.section4.problem1 import problem1 as gcd
+from chapter3.section4.problem5 import problem5 as bezout
 
-def problem(a, b, c):
+def solve(a, b, c):
   if (b < 0):
     return None
 
   # d = gcd(a,b)
-  d = chapter3.section4.problem1.problem1.problem(abs(a), abs(b))
+  d = gcd.solve(abs(a), abs(b))
 
   if (c % d != 0):
     return None
 
   # returns m,n where am+by=gcd(a,b)
-  bezout_coefficients = chapter3.section4.problem5.problem5.problem(a, b)
+  bezout_coefficients = bezout.solve(a, b)
 
   b1 = float(-(bezout_coefficients[1] * c)) / abs(b)
   b2 = float((bezout_coefficients[0] * c)) / abs(a)
