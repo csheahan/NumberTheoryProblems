@@ -6,15 +6,15 @@ Constraints:
   integers - must be of length greater than 2
 '''
 
-import chapter3.section4.problem3.problem3
+from chapter3.section4.problem3 import problem3 as gcd
 
-def problem(integers):
+def solve(integers):
   if (len(integers) < 2):
     raise ValueError("There must a set of more the 2 integers")
 
-  gcd = chapter3.section4.problem3.problem3.problem(integers[0], integers[1])
+  curr_gcd = gcd.solve(integers[0], integers[1])
 
   for i in xrange(2, len(integers)):
-    gcd = chapter3.section4.problem3.problem3.problem(gcd, integers[i])
+    curr_gcd = gcd.solve(curr_gcd, integers[i])
 
-  return gcd
+  return curr_gcd

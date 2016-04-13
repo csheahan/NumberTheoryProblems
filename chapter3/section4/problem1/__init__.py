@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section4.problem1.problem1
+from chapter3.section4.problem1 import problem1 as problem1
 
 def load_problem(tree, frame):
   tree.insert("ch3.4", "end", "ch3.4.1", text="Problem 1", tags=["ch3.4.1"])
@@ -28,10 +28,7 @@ def problem_one_display_answer(frame, a, b):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section4.problem1.problem1.problem(
-      int(b.get()),
-      int(a.get())
-    )
+    answer = problem1.solve(int(b.get()), int(a.get()))
 
     answerText = "(" + a.get() + ", " + b.get() + ") = " + str(answer)
     answerLabel = Label(frame, text=answerText)

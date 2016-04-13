@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section4.problem5.problem5
+from chapter3.section4.problem5 import problem5 as problem5
 
 def load_problem(tree, frame):
   tree.insert("ch3.4", "end", "ch3.4.5", text="Problem 5", tags=["ch3.4.5"])
@@ -29,10 +29,7 @@ def problem_five_display_answer(frame, a, b):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section4.problem5.problem5.problem(
-      int(b.get()),
-      int(a.get())
-    )
+    answer = problem5.solve(int(b.get()), int(a.get()))
 
     answerText = "The Bezout coefficients of " + a.get() + " and "
     answerText += b.get() + " are " + str(answer[0]) + " and " + str(answer[1])

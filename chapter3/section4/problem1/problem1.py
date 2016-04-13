@@ -7,7 +7,7 @@ Constraints:
   None
 '''
 
-def problem(a, b):
+def solve(a, b):
   # Ensure a is the higher number
   if a < b:
     temp = a
@@ -21,7 +21,7 @@ def problem(a, b):
       return 1
 
     q = 1
-    
+
     while (b * q < a):
       q += 1
 

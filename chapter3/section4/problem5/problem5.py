@@ -7,7 +7,7 @@ Constraints:
   b - must be a positive integer
 '''
 
-def problem(a, b):
+def solve(a, b):
   if (a < 1):
     raise ValueError("a must be a positive integer")
   if (b < 1):
@@ -44,7 +44,7 @@ def problem(a, b):
     if (remainder == 0):
       if (flipped):
         return (si[0], ti[0])
-      
+
       return (ti[0], si[0])
     else:
       a = b
