@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section3.problem2.problem2
+from chapter3.section3.problem2 import problem2 as problem2
 
 def load_problem(tree, frame):
   tree.insert("ch3.3", "end", "ch3.3.2", text="Problem 2", tags=["ch3.3.2"])
@@ -26,7 +26,7 @@ def problem_two_display_answer(frame, n):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section3.problem2.problem2.problem(int(n.get()))
+    answer = problem2.solve(int(n.get()))
 
     answerText = "The Farey series of order n is: "
 

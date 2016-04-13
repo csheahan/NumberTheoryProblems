@@ -8,7 +8,7 @@ Constraints:
   n - must be a positive integer
 '''
 
-def problem(m, n):
+def solve(m, n):
   if (n < 1):
     raise ValueError("n must be a positive integer")
   if (m < 1):
