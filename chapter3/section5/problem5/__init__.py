@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section5.problem5.problem5
+from chapter3.section5.problem5 import problem5 as problem5
 
 def load_problem(tree, frame):
   tree.insert("ch3.5", "end", "ch3.5.5", text="Problem 5", tags=["ch3.5.5"])
@@ -27,7 +27,7 @@ def problem_five_display_answer(frame, n):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section5.problem5.problem5.problem(int(n.get()))
+    answer = problem5.solve(int(n.get()))
 
     answerText = "The prime factorization of n! is "
 

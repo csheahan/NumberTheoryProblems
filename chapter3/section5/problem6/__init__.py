@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section5.problem6.problem6
+from chapter3.section5.problem6 import problem6 as problem6
 
 def load_problem(tree, frame):
   tree.insert("ch3.5", "end", "ch3.5.6", text="Problem 6", tags=["ch3.5.6"])
@@ -27,7 +27,7 @@ def problem_six_display_answer(frame, n):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section5.problem6.problem6.problem(int(n.get()))
+    answer = problem6.solve(int(n.get()))
 
     answerText = "The number of powerful numbers less than " + n.get() + " is: "
     answerText += str(len(answer)) + ". Those numbers are "

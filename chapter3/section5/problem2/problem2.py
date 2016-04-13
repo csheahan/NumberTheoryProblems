@@ -8,16 +8,16 @@ Constraints:
   b - must be a positive integer
 '''
 
-import chapter3.section5.problem1.problem1
+from chapter3.section5.problem1 import problem1 as findDivisors
 
-def problem(a,b):
+def solve(a,b):
   if (a < 1):
     raise ValueError("a must be a positive integer")
   if (b < 1):
     raise ValueError("b must be a positive integer")
 
-  a_prime_factor_list = chapter3.section5.problem1.problem1.getPrimeFactors(a)
-  b_prime_factor_list = chapter3.section5.problem1.problem1.getPrimeFactors(b)
+  a_prime_factor_list = findDivisors.getPrimeFactors(a)
+  b_prime_factor_list = findDivisors.getPrimeFactors(b)
 
   gcd = 1
 

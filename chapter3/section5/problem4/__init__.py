@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section5.problem4.problem4
+from chapter3.section5.problem4 import problem4 as problem4
 
 def load_problem(tree, frame):
   tree.insert("ch3.5", "end", "ch3.5.4", text="Problem 4", tags=["ch3.5.4"])
@@ -27,7 +27,7 @@ def problem_four_display_answer(frame, n):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section5.problem4.problem4.problem(int(n.get()))
+    answer = problem4.solve(int(n.get()))
 
     answerText = "The number of zeros at the end of the decimal expansion of "
     answerText += n.get() + "! is " + str(answer)

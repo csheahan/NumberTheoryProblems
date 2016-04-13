@@ -8,10 +8,10 @@ Constraints:
 '''
 
 # Primality testing
-import chapter3.section1.problem1.problem1
+from chapter3.section1.problem1 import problem1 as isNotPrime
 import itertools
 
-def problem(a):
+def solve(a):
   if (a < 1):
     raise ValueError("a must be a positive integer")
 
@@ -35,7 +35,7 @@ def getPrimeFactors(a):
   lst = []
   while (i <= a):
     # If is prime
-    if (not chapter3.section1.problem1.problem1.problem(i)):
+    if (not isNotPrime.solve(i)):
       if (a % i == 0):
         a /= i
         lst.append(i)

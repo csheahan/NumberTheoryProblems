@@ -9,7 +9,7 @@ Constraints:
 
 import math
 
-def problem(n):
+def solve(n):
   if (n < 1):
     raise ValueError("n must be a positive integer")
 
