@@ -6,7 +6,7 @@ Constraints:
   n - must be a positive integer
 '''
 
-def problem(n):
+def solve(n):
   if (n < 1):
     raise ValueError(u"pi must be a positive integer")
   elif (n == 2 or n == 1):

@@ -10,7 +10,7 @@ Constraints:
   a & b - cannot be divisible any similar primes
 '''
 
-def problem(a, b):
+def solve(a, b):
   if (a < 1):
     raise ValueError("a must be a positive integer")
   elif (b < 1):

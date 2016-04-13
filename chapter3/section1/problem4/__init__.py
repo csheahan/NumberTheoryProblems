@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section1.problem4.problem4
+from chapter3.section1.problem4 import problem4 as problem4
 
 def load_problem(tree, frame):
   tree.insert("ch3.1", "end", "ch3.1.4", text="Problem 4", tags=["ch3.1.4"])
@@ -29,10 +29,7 @@ def problem_four_display_answer(frame, a, b):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section1.problem4.problem4.problem(
-      int(a.get()),
-      int(b.get())
-    )
+    answer = problem4.solve(int(a.get()), int(b.get()))
 
     answerText = "The smallest prime number in the arithmetic progression a "
     answerText += "* n + b is: " + str(answer)

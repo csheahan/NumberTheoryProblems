@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-import chapter3.section1.problem3.problem3
+from chapter3.section1.problem3 import problem3 as problem3
 
 def load_problem(tree, frame):
   tree.insert("ch3.1", "end", "ch3.1.3", text="Problem 3", tags=["ch3.1.3"])
@@ -26,7 +26,7 @@ def problem_three_display_answer(frame, n):
   helpers.clear_row(frame, 2)
 
   try:
-    answer = chapter3.section1.problem3.problem3.problem(int(n.get()))
+    answer = problem3.solve(int(n.get()))
 
     answerText = u"\u03C0(" + unicode(n.get()) + u") = "
     answerText += unicode(str(answer))
