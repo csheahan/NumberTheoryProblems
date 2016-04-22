@@ -102,8 +102,59 @@ def generate_three_prompt_and_input(
     )
     submitButton.grid(row=1, column=6)
 
-def handle_error_with_message(err, frame, colspan):
-  clear_row(frame, 2)
+def generate_four_prompt_and_input(
+  frame,
+  problemText,
+  promptOneText,
+  promptTwoText,
+  promptThreeText,
+  promptFourText,
+  problemFunction):
+    prompt = Label(frame, text=problemText)
+    prompt.grid(row=0, columnspan=5)
+
+    entryLabelOne = Label(frame, text=promptOneText)
+    entryLabelOne.grid(row=1, column=0)
+
+    promptOne = Entry(frame)
+    promptOne.grid(row=1, column=1)
+
+    entryLabelTwo = Label(frame, text=promptTwoText)
+    entryLabelTwo.grid(row=1, column=2)
+
+    promptTwo = Entry(frame)
+    promptTwo.grid(row=1, column=3)
+
+    row2Offset = 0
+
+    entryLabelthree = Label(frame, text=promptThreeText)
+    entryLabelthree.grid(row=2, column=row2Offset+0)
+
+    promptThree = Entry(frame)
+    promptThree.grid(row=2, column=row2Offset+1)
+
+    entryLabelfour = Label(frame, text=promptFourText)
+    entryLabelfour.grid(row=2, column=row2Offset+2)
+
+    promptFour = Entry(frame)
+    promptFour.grid(row=2, column=row2Offset+3)
+
+    submitButton = Button(frame,
+      text="submit",
+      command=functools.partial(
+        problemFunction,
+        frame,
+        promptOne,
+        promptTwo,
+        promptThree,
+        promptFour
+      )
+    )
+
+    submitButton.grid(row=2, column=row2Offset+4)
+
+def handle_error_with_message(err, frame, colspan, rowToDisplay=2):
+  clear_row(frame, rowToDisplay)
 
   errorText = u"An error has occurred. Type:"
   errorText += unicode(type(err))
@@ -111,4 +162,4 @@ def handle_error_with_message(err, frame, colspan):
   errorText += unicode(str(err))
 
   errorLabel = Label(frame, text=errorText)
-  errorLabel.grid(row=2, columnspan=colspan)
+  errorLabel.grid(row=rowToDisplay, columnspan=colspan)

@@ -70,6 +70,8 @@ Number Theory Problems
                            given a, b, and c where `ax+by=c`
     - [Problem 2][3.7.2] - Find all the positive solutions of a diophantine
                            equation, given a, b, and c where `ax+by=c`
+    - [Problem 3][3.7.3] - Find all the solutions of a diophantine equation,
+                           given a, b, c, and d where `ax+by+cz=d`
 
 ### Documentation ###
 
@@ -126,4 +128,5 @@ of the subject in an environment I enjoy.
 [3.5.6]: chapter3/section5/problem6
 [3.7.1]: chapter3/section7/problem1
 [3.7.2]: chapter3/section7/problem2
+[3.7.2]: chapter3/section7/problem3
 [docs]: Docs
