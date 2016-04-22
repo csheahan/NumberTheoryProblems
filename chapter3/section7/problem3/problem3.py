@@ -20,28 +20,28 @@ def solve(a, b, c, d):
   b_prime = b / p
   c_prime = c / p
 
-  (u_knot, v_knot) = linear_diophantine(a_prime, b_prime, c)
-  (z_knot, t_knot) = linear_diophantine(c, p, d)
-  (x_knot, y_knot) = linear_diophantine(a_prime, b_prime, t_knot)
+  (u_naught, v_naught) = linear_diophantine(a_prime, b_prime, c)
+  (z_naught, t_naught) = linear_diophantine(c, p, d)
+  (x_naught, y_naught) = linear_diophantine(a_prime, b_prime, t_naught)
 
-  x = "x = " + str(x_knot) + " + " + str(b_prime) + "k - " + str(u_knot) + "m"
-  y = "y = " + str(y_knot) + " - " + str(a_prime) + "k - " + str(v_knot) + "m"
-  z = "z = " + str(z_knot) + " + " + str(p) + "m"
+  x = "x = " + str(x_naught) + " + " + str(b_prime) + "k - " + str(u_naught)+"m"
+  y = "y = " + str(y_naught) + " - " + str(a_prime) + "k - " + str(v_naught)+"m"
+  z = "z = " + str(z_naught) + " + " + str(p) + "m"
 
   return (x, y, z)
 
 def linear_diophantine(a, b, c):
   bezout_coefficients = bezout.solve(a, b)
-  knot_coeffs = (
+  naught_coeffs = (
     bezout_coefficients[0] * (c),
     bezout_coefficients[1] * (c)
   )
 
-  if (knot_coeffs[0] * a + knot_coeffs[1] * b != c):
-    knot_coeffs = (knot_coeffs[1], knot_coeffs[0])
+  if (naught_coeffs[0] * a + naught_coeffs[1] * b != c):
+    naught_coeffs = (naught_coeffs[1], naught_coeffs[0])
 
-    if (knot_coeffs[0] * a + knot_coeffs[1] * b != c):
+    if (naught_coeffs[0] * a + naught_coeffs[1] * b != c):
       raise ValueError("Something went wrong calculating the linear dio")
 
-  return knot_coeffs
+  return naught_coeffs
 

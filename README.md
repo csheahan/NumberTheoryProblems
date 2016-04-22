@@ -128,5 +128,5 @@ of the subject in an environment I enjoy.
 [3.5.6]: chapter3/section5/problem6
 [3.7.1]: chapter3/section7/problem1
 [3.7.2]: chapter3/section7/problem2
-[3.7.2]: chapter3/section7/problem3
+[3.7.3]: chapter3/section7/problem3
 [docs]: Docs

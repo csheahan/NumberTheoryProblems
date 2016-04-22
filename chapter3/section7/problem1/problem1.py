@@ -20,12 +20,12 @@ def solve(a, b, c):
 
   # The bezout coefficients are m,n from the equation am*bn=gcd(a,b)
   bezout_coefficients = bezout.solve(a, b)
-  knot_coefficients = (
+  naught_coefficients = (
     bezout_coefficients[0] * (c / d),
     bezout_coefficients[1] * (c / d)
   )
 
-  x = str(knot_coefficients[0]) + " + " + str(b / d) + "n"
-  y = str(knot_coefficients[1]) + " + " + str(a / d) + "n"
+  x = str(naught_coefficients[0]) + " + " + str(b / d) + "n"
+  y = str(naught_coefficients[1]) + " + " + str(a / d) + "n"
 
   return (x, y)
