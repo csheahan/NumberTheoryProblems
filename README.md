@@ -72,6 +72,9 @@ Number Theory Problems
                            equation, given a, b, and c where `ax+by=c`
     - [Problem 3][3.7.3] - Find all the solutions of a diophantine equation,
                            given a, b, c, and d where `ax+by+cz=d`
+    - [Problem 4][3.7.4] - Given a, b, find all positive n s.t. the linear
+                           diophantine equation `ax+by=n` has no positive
+                           solutions
 
 ### Documentation ###
 
@@ -129,4 +132,5 @@ of the subject in an environment I enjoy.
 [3.7.1]: chapter3/section7/problem1
 [3.7.2]: chapter3/section7/problem2
 [3.7.3]: chapter3/section7/problem3
+[3.7.4]: chapter3/section7/problem4
 [docs]: Docs

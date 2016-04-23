@@ -10,6 +10,7 @@ Constraints:
 
 from chapter3.section4.problem1 import problem1 as gcd
 from chapter3.section4.problem5 import problem5 as bezout
+import math
 
 def solve(a, b, c):
   if (b < 0):
@@ -27,4 +28,12 @@ def solve(a, b, c):
   b1 = float(-(bezout_coefficients[1] * c)) / abs(b)
   b2 = float((bezout_coefficients[0] * c)) / abs(a)
 
-  return int(max(b1, b2)) - int(min(b1, b2))
+  low = min(b1, b2)
+  high = max(b1, b2)
+  count = 0
+
+  for i in xrange(int(math.floor(low)), int(math.ceil(high)) + 1):
+    if (low <= i and i <= high):
+      count += 1
+
+  return count
