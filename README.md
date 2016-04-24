@@ -75,6 +75,7 @@ Number Theory Problems
     - [Problem 4][3.7.4] - Given a, b, find all positive n s.t. the linear
                            diophantine equation `ax+by=n` has no positive
                            solutions
+- Chapter 4: Congruences
 
 ### Documentation ###
 

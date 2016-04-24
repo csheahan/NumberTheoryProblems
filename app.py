@@ -8,6 +8,7 @@ Tkinter.wantobjects = False
 
 import chapter1
 import chapter3
+import chapter4
 
 # Class containing tk instance
 class App:
@@ -19,8 +20,11 @@ class App:
     rightSide.pack(side=LEFT)
 
     tree = ttk.Treeview(frame)
+
     chapter1.load_chapter(tree, rightSide)
     chapter3.load_chapter(tree, rightSide)
+    chapter4.load_chapter(tree, rightSide)
+
     tree.pack()
 
 # Make tk root widget
