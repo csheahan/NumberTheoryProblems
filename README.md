@@ -76,6 +76,9 @@ Number Theory Problems
                            diophantine equation `ax+by=n` has no positive
                            solutions
 - Chapter 4: Congruences
+  - Section 1: Introduction to Congruences
+    - [Problem 1][4.1.1] - Find r for the equation `a=bm+r,
+                           0 <= r < m` given a and m
 
 ### Documentation ###
 
@@ -134,4 +137,5 @@ of the subject in an environment I enjoy.
 [3.7.2]: chapter3/section7/problem2
 [3.7.3]: chapter3/section7/problem3
 [3.7.4]: chapter3/section7/problem4
+[4.1.1]: chapter4/section1/problem1
 [docs]: Docs
