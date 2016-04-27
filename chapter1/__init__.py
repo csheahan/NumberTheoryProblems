@@ -1,7 +1,7 @@
-from chapter1 import section1 as section1
-from chapter1 import section3 as section3
-from chapter1 import section4 as section4
-from chapter1 import section5 as section5
+from chapter1 import section1
+from chapter1 import section3
+from chapter1 import section4
+from chapter1 import section5
 
 def load_chapter(tree, frame):
   tree.insert("", "end", "ch1", text="Chapter 1")
