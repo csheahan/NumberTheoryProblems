@@ -2,7 +2,7 @@ from Tkinter import *
 import ttk
 import functools
 import helpers
-from chapter3.section5.problem3 import problem3 as problem3
+from chapter3.section5.problem3 import problem3
 
 def load_problem(tree, frame):
   tree.insert("ch3.5", "end", "ch3.5.3", text="Problem 3", tags=["ch3.5.3"])
