@@ -1,4 +1,4 @@
-import chapter4.section1 as section1
+from chapter4 import section1
 
 def load_chapter(tree, frame):
   tree.insert("", "end", "ch4", text="Chapter 4")
