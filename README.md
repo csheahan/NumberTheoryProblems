@@ -81,6 +81,8 @@ Number Theory Problems
                            0 <= r < m` given a and m
     - [Problem 2][4.1.2] - Find c for the equation `(a[+-]b) mod m = c, m <
                            word size / 2`
+    - [Problem 3][4.1.3] - Find c for the equation `(a*b) mod m = c, m <
+                           word size / 2` using Head's algorithm.
 
 ### Documentation ###
 
@@ -141,4 +143,5 @@ of the subject in an environment I enjoy.
 [3.7.4]: chapter3/section7/problem4
 [4.1.1]: chapter4/section1/problem1
 [4.1.2]: chapter4/section1/problem2
+[4.1.3]: chapter4/section1/problem3
 [docs]: Docs
