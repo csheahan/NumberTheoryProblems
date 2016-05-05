@@ -82,7 +82,9 @@ Number Theory Problems
     - [Problem 2][4.1.2] - Find c for the equation `(a[+-]b) mod m = c, m <
                            word size / 2`
     - [Problem 3][4.1.3] - Find c for the equation `(a*b) mod m = c, m <
-                           word size / 2` using Head's algorithm.
+                           word size / 2` using Head's algorithm
+    - [Problem 4][4.1.4] - Find c for the equation `b^N mod m = c` using modular
+                           exponentiation
 
 ### Documentation ###
 
@@ -144,4 +146,5 @@ of the subject in an environment I enjoy.
 [4.1.1]: chapter4/section1/problem1
 [4.1.2]: chapter4/section1/problem2
 [4.1.3]: chapter4/section1/problem3
+[4.1.4]: chapter4/section1/problem4
 [docs]: Docs
