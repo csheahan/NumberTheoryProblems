@@ -85,6 +85,7 @@ Number Theory Problems
                            word size / 2` using Head's algorithm
     - [Problem 4][4.1.4] - Find c for the equation `b^N mod m = c` using modular
                            exponentiation
+  - Section 2: Linear Congruences
 
 ### Documentation ###
 
