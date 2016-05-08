@@ -86,6 +86,8 @@ Number Theory Problems
     - [Problem 4][4.1.4] - Find c for the equation `b^N mod m = c` using modular
                            exponentiation
   - Section 2: Linear Congruences
+    - [Problem 1][4.2.1] - Solve linear congruences using the technique in the
+                           text.
 
 ### Documentation ###
 
@@ -148,4 +150,5 @@ of the subject in an environment I enjoy.
 [4.1.2]: chapter4/section1/problem2
 [4.1.3]: chapter4/section1/problem3
 [4.1.4]: chapter4/section1/problem4
+[4.2.1]: chapter4/section2/problem1
 [docs]: Docs
