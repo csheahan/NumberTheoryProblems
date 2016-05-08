@@ -1,6 +1,17 @@
 from Tkinter import *
+from fractions import gcd
 import ttk
 import functools
+
+def bezout(a, b, coeffs):
+  if (a * coeffs[0] + b * coeffs[1] != gcd(a, b)):
+    coeffs = coeffs[1], coeffs[0]
+
+
+    if (a * coeffs[0] + b * coeffs[1] != gcd(a, b)):
+      raise RuntimeError("Something went wrong with bezout coefficients")
+
+  return coeffs
 
 def clear_frame(frame):
   for widget in frame.winfo_children():
