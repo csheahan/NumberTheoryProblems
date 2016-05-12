@@ -28,7 +28,6 @@ def solve(a, b, m):
   bezout_co = helpers.bezout(a, m, bezout.solve(a, m))
   naught_co = (bezout_co[0] * (b / d), bezout_co[1] * (b / d))
 
-  print("%d*%d+%d*%d=%d" % (a,naught_co[0],m,naught_co[1],b))
   if (d > 1):
     mult = m / d
 

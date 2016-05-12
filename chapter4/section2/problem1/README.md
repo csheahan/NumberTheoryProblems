@@ -1,7 +1,7 @@
 Chapter 4 Section 2 Problem 1
 =============================
 
-- [Thoughts][thoughts]
+-http://www.power-plugs-sockets.com/philippines/ [Thoughts][thoughts]
 
 ### Thoughts ###
 
