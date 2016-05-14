@@ -8,8 +8,7 @@ from chapter4.section2.problem1 import problem1
 
 def load_problem(tree, frame):
   tree.insert("ch4.2", "end", "ch4.2.1", text="Problem 1", tags=["ch4.2.1"])
-  tree.tag_bind("ch4.2.1", '<1>',
-    functools.partial(problem_one_view, frame))
+  tree.tag_bind("ch4.2.1", '<1>', functools.partial(problem_one_view, frame))
 
 def problem_one_view(frame, event):
   helpers.clear_frame(frame)

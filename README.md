@@ -91,6 +91,7 @@ Number Theory Problems
     - [Problem 2][4.2.2] - Solve for x in the equation `ax ≡ b mod p` given a,
                            b, and p using an iterative method
     - [Problem 3][4.2.3] - Find an inverse for a positive integer given a modulo
+    - [Problem 4][4.2.4] - Solve linear congruences using inverses
 
 ### Documentation ###
 
@@ -156,4 +157,5 @@ of the subject in an environment I enjoy.
 [4.2.1]: chapter4/section2/problem1
 [4.2.2]: chapter4/section2/problem2
 [4.2.3]: chapter4/section2/problem3
+[4.2.4]: chapter4/section2/problem4
 [docs]: Docs
